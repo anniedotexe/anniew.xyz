@@ -11,54 +11,60 @@
     <meta name="author" content="Annie Wu">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="../css/main.css" rel="stylesheet" type="text/css">
-    <link href="../css/portfolio.css" rel="stylesheet" type="text/css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" rel="stylesheet">
 
-    <script src="https://kit.fontawesome.com/6cdca09e40.js" crossorigin="anonymous"></script>
+    <link href="../css/portfolio.css" rel="stylesheet" type="text/css">
+    <link href="../css/main.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-    <div class="navbar">
-        <nav>
-            <div class="logo">
-                <a class="section-home" href="/">
-                    <img src="../img/logo.svg" alt="AW logo">
-                </a>
+    <div class="page-container">
+        <div class="navbar">
+            <a href="/"><img src="../img/logo.svg" class="logo" alt="AW logo"></a>
+            <input id="menu-toggle" type="checkbox">
+            <nav class="nav">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="../html/about.html">About</a></li>
+                    <li><a class="current" href="../html/portfolio.html">Portfolio</a></li>
+                    <li><a href="../html/photography.html">Photography</a></li>
+                    <li><a href="../anniewu-resume.pdf">Resume</a></li>
+                </ul>
+            </nav>
+            <label for="menu-toggle">
+                <i class="fa fa-bars menu-icon"></i>
+            </label>
+        </div>
+
+        <div class="content-wrap">
+            <section>
+                <div class="page-body">
+                    <h1>This page is currently under construction. </h1>
+                    <img src="https://media.giphy.com/media/SwImQhtiNA7io/giphy.gif" alt="dog on computer">
+                </div>
+            </section>
+        </div>
+
+
+        <footer>
+            <div class="footer-icons">
+                <a href="https://www.linkedin.com/in/anniewu2303/" target="_blank" class="fab fa-linkedin"
+                    aria-label="LinkedIn"></a>
+                <a href="https://github.com/anniewu2303" target="_blank" class="fab fa-github" aria-label="GitHub"></a>
+                <a href="https://twitter.com/intent/follow?screen_name=anniedotexe" target="_blank"
+                    class="fab fa-twitter" aria-label="Twitter"></a>
+                <a href="https://www.flickr.com/people/anniewuphotos/" target="_blank" class="fab fa-flickr"
+                    aria-label="Flickr"></a>
+                <a href="https://www.instagram.com/anniedotexe/" target="_blank" class="fab fa-instagram"
+                    aria-label="Instagram"></a>
+                <a href="https://www.twitch.tv/anniedotexe" target="_blank" class="fab fa-twitch"
+                    aria-label="Twitch"></a>
             </div>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="../html/about.html">About</a></li>
-                <li><a class="current" href="../html/portfolio.html">Portfolio</a></li>
-                <li><a href="../html/photography.html">Photography</a></li>
-                <li><a href="../anniewu-resume.pdf">Resume</a></li>
-            </ul>
-        </nav>
+            <div class=footer-text>
+                <a href="mailto:anniewu2303@gmail.com" class="footer-text">anniewu2303@gmail.com</a>
+            </div>
+        </footer>
     </div>
-
-    <div class="page-body">
-        <h1>This page is currently under construction. </h1>
-        <img src="https://media.giphy.com/media/SwImQhtiNA7io/giphy.gif" alt="dog on computer">
-    </div>
-
 </body>
-
-<footer>
-    <div class="footer-icons">
-        <a href="https://www.linkedin.com/in/anniewu2303/" target="_blank" class="fab fa-linkedin"
-            aria-label="LinkedIn"></a>
-        <a href="https://github.com/anniewu2303" target="_blank" class="fab fa-github" aria-label="GitHub"></a>
-        <a href="https://twitter.com/intent/follow?screen_name=anniedotexe" target="_blank" class="fab fa-twitter"
-            aria-label="Twitter"></a>
-        <a href="https://www.flickr.com/people/anniewuphotos/" target="_blank" class="fab fa-flickr"
-            aria-label="Flickr"></a>
-        <a href="https://www.instagram.com/anniedotexe/" target="_blank" class="fab fa-instagram"
-            aria-label="Instagram"></a>
-        <a href="https://www.twitch.tv/anniedotexe" target="_blank" class="fab fa-twitch" aria-label="Twitch"></a>
-    </div>
-    <div class=footer-text>
-        <a href="mailto:anniewu2303@gmail.com" class="footer-text">anniewu2303@gmail.com</a>
-    </div>
-
-</footer>
 
 </html>

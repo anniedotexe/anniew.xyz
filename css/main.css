@@ -5,12 +5,12 @@
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
-    background-color: #E1E5EE;
+    font-family: "Montserrat", sans-serif;
+    background-color: #e1e5ee;
 }
 
 h1, h2, h3, h4, h5, h6, a {
-    font-family: 'Nunito', sans-serif;
+    font-family: "Nunito", sans-serif;
     margin: 0;
 }
 
@@ -18,93 +18,156 @@ a {
     color: inherit;
 }
 
-.navbar {
-    margin-bottom: 100px;
+.page-container {
+    position: relative;
+    min-height: 100vh;
 }
 
-nav {
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100px;
-    position: fixed;
-    padding: 10px 200px;
+.content-wrap {
+    padding: 2.5rem 0 5rem 0;
+}
+
+/* Nav Bar */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 25px;
     background-color: #E1E5EE;
 }
 
-nav .logo {
-    padding: 22px;
-    height: 80px;
-    float: left;
+@media (min-width: 768px) {
+    .navbar {
+        display: flex;
+        padding: 10px 75px;
+        height: 70px;
+        background-color: #E1E5EE;
+    }
+}
+
+.logo {
+    margin-top: 10px;
+    height: 30px;
+}
+
+.menu-icon {
+    color: #083d77;
+    font-size: 2.4em;
+    line-height: 50px;
+}
+
+.menu-icon:hover {
+    color: #ef798a;
+    cursor: pointer;
+}
+
+nav {
+    position: absolute;
+    background-color: #6BAA75;
+    top: 70px;
+    left: 0;
+    width: 100%;
 }
 
 nav ul {
-    list-style: none;
-    margin: 0 10px;
-    padding: 0;
-    float: right;
-    display: flex;
+    list-style-type: none;
+    max-height: 0px;
+    overflow: hidden;
+}
+
+nav ul li {
+    text-align: center;
 }
 
 nav ul li a {
-    line-height: 80px;
-    margin: 10px;
-    padding: 12px 10px;
-    font-size: 1.2em;
+    display: inline-block;
+    padding: 10px 7px;
+    color: #083d77;
+    font-size: 1.1em;
     font-weight: bold;
     text-decoration: none;
     text-transform: uppercase;
-    color: #083D77;
-    transition: all 0.3s ease-out;
+    letter-spacing: 0.05em;
+    transition: all 0.2s ease-out;
 }
 
-nav ul li a:focus{
-    outline: none;
-}
-
-nav ul li a:hover {
-    color: #EF798A;
+nav ul li a:hover, .nav ul li a:focus {
+    color: #ef798a;
 }
 
 nav ul li a.current {
-    color: #8B2635;
+    color: #4c191b;
 }
 
+#menu-toggle {
+    display: none;
+}
+
+#menu-toggle:checked~nav ul {
+    max-height: none!important;
+    padding: 15px 0;
+    transition: all 0.5s;
+}
+
+@media (min-width: 768px) {
+    .menu-icon {
+        display: none;
+    }
+    nav {
+        position: relative;
+        top: -10px;
+        background-color: transparent;
+    }
+    nav ul {
+        max-height: 70px;
+        padding: 15px 0;
+        text-align: right;
+    }
+    nav ul li {
+        display: inline-flex;
+    }
+}
+
+/* Home Page */
+
 .main-svg {
-    padding: 0 15%;
-    width: 100vw;
-    height: auto;
-    display:table-cell; 
-    vertical-align:middle; 
-    text-align:center;
+    padding: 20px 5%;
 }
 
 .main-svg p img {
-    max-width:100%;
-    height:auto;
-    max-height:100%; 
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
 }
 
 .page-body {
     text-align: center;
-    padding: 50px 0;
 }
 
-.page-body img {
-    margin-top: 30px;
+@media (min-width: 768px) {
+    .main-svg {
+        padding: 10px 15%;
+        width: 100vw;
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+    }
 }
+
+/* Footer */
 
 footer {
-    margin: 30px 0 0 0;
-    padding: 0 200px;
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+    position: absolute;
     bottom: 0;
     width: 100%;
-    background-color: #E1E5EE;
+    height: 5rem;
+    margin-bottom: 20px;
+    padding: 10px 25px;
+    position: absolute;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
 }
 
 .footer-icons {
@@ -116,7 +179,7 @@ footer {
     text-align: right;
     font-size: 16px;
     text-decoration: none;
-    font-family: 'Nunito', sans-serif;
+    font-family: "Nunito", sans-serif;
 }
 
 .fab {
@@ -124,11 +187,20 @@ footer {
     font-size: 25px;
     text-align: center;
     text-decoration: none;
-    color: #083D77;
+    color: #083d77;
     border-radius: 50%;
 }
 
 .fab:hover, .footer-text:hover {
-    color: #EF798A;
+    color: #ef798a;
     transition: all 0.3s ease-out;
+}
+
+@media (min-width: 768px) {
+    footer {
+        padding: 10px 70px;
+        background-color: #e1e5ee;
+        height: 2.5rem;
+        flex-direction: row;
+    }
 }
