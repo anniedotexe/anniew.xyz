@@ -88,7 +88,6 @@ nav ul li a {
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    transition: all 0.2s ease-out;
 }
 
 nav ul li a:hover, .nav ul li a:focus {
