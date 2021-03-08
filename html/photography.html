@@ -11,38 +11,39 @@
     <meta name="author" content="Annie Wu">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css?family=Megrim&family=Montserrat&family=Nunito&display=swap"
+        rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" rel="stylesheet">
-
     <link href="../css/photography.css" rel="stylesheet" type="text/css">
     <link href="../css/main.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
     <div class="page-container">
-        <div class="navbar">
-            <a href="/"><img src="../img/logo.svg" class="logo" alt="AW logo"></a>
-            <input id="menu-toggle" type="checkbox">
-            <nav class="nav">
-                <ul>
+        <div class="nav-wrap">
+            <div class="nav">
+                <a href="/"><img src="../img/logo.svg" class="logo" alt="AW logo"></a>
+                <input id="nav-button" type="checkbox">
+                <label class="nav-icon" for="nav-button">
+                    <span></span>
+                </label>
+                <ul class="nav-items">
                     <li><a href="/">Home</a></li>
                     <li><a href="../html/about.html">About</a></li>
                     <li><a href="../html/portfolio.html">Portfolio</a></li>
                     <li><a class="current" href="../html/photography.html">Photography</a></li>
                     <li><a href="../anniewu-resume.pdf">Resume</a></li>
                 </ul>
-            </nav>
-            <label for="menu-toggle">
-                <i class="fa fa-bars menu-icon"></i>
-            </label>
+            </div>
         </div>
 
         <div class="content-wrap">
-            <section>
-                <div class="page-body">
-                    <h1>This page is currently under construction. </h1>
-                    <img src="https://media.giphy.com/media/unQ3IJU2RG7DO/giphy.gif" alt="cat on computer">
-                </div>
-            </section>
+            <div class="main-content">
+                <h1>This page is currently under construction. </h1>
+                <img src="https://media.giphy.com/media/unQ3IJU2RG7DO/giphy.gif" alt="cat on computer">
+            </div>
+
         </div>
 
         <footer>

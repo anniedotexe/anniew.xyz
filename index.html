@@ -11,34 +11,41 @@
     <meta name="author" content="Annie Wu">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="https://fonts.gstatic.com" rel="preconnect">
-    <link href="https://fonts.googleapis.com/css?family=Megrim&family=Montserrat&family=Nunito&display=swap"
-        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat&family=Nunito&display=swap" media="print"
+        onload="this.media='all'" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&family=Nunito&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" rel="stylesheet">
+    
     <link href="css/main.css" rel="stylesheet" type="text/css">
+
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito&display=swap" />
+    </noscript>
 </head>
 
 <body>
     <div class="page-container">
-        <div class="navbar">
-            <a href="/"><img src="img/logo.svg" class="logo" alt="AW logo"></a>
-            <input id="menu-toggle" type="checkbox">
-            <nav class="nav">
-                <ul>
+        <div class="nav-wrap">
+            <div class="nav">
+                <a href="/"><img src="img/logo.svg" class="logo" alt="AW logo"></a>
+                <input id="nav-button" type="checkbox">
+                <label class="nav-icon" for="nav-button">
+                    <span></span>
+                </label>
+                <ul class="nav-items">
                     <li><a class="current" href="/">Home</a></li>
                     <li><a href="../html/about.html">About</a></li>
                     <li><a href="../html/portfolio.html">Portfolio</a></li>
                     <li><a href="../html/photography.html">Photography</a></li>
                     <li><a href="anniewu-resume.pdf">Resume</a></li>
                 </ul>
-            </nav>
-            <label for="menu-toggle">
-                <i class="fa fa-bars menu-icon"></i>
-            </label>
+            </div>
         </div>
 
         <div class="content-wrap">
-            <div class="main-svg">
+            <div class="main-content">
                 <p class="svg">
                     <img alt="Annie Wu animated svg" preserveAspectRatio="xMidYMid meet"
                         src="https://gist.githubusercontent.com/anniewu2303/bf451b73ebbd71dc5887e1ac03b02b47/raw/41b3b8f6cba7550498447608f3737b4be9a12743/me2.svg" />
