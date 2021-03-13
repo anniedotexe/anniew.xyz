@@ -9,13 +9,18 @@ body {
     font-family: 'Noto Sans', sans-serif;
     font-weight: 400;
     font-size: 16px;
+    color: #151515;
     background-color: #EFF2F1;
-    justify-content: baseline;
 }
 
-h1, h2, h3, h4 {
+h1, h2 {
     font-family: 'Fira Mono', monospace;
     color: rgba(64, 32, 64, 0.75);
+}
+
+h2 {
+    font-size: 1.6em;
+    margin: 50px auto;
 }
 
 a {
@@ -44,11 +49,11 @@ a {
 
 .nav {
     position: relative;
-    margin-top: 10px;
+    padding-top: 10px;
     color: #EFF2F1;
     width: 100%;
     max-width: 100%;
-    height: 50px;
+    height: 60px;
 }
 
 /* Nav Menu Items */
@@ -56,7 +61,7 @@ a {
 .nav-items {
     display: flex;
     position: relative;
-    text-align: center;
+    margin-right: 0;
     padding: 15px 0 0 10px;
     list-style: none;
     overflow: hidden;
@@ -64,6 +69,7 @@ a {
 
 .nav-items li a {
     display: block;
+    padding-right: 0;
     color: #151515;
     background-color: #EFF2F1;
     text-decoration: none;
@@ -97,6 +103,7 @@ a {
     width: max-content;
     text-align: center;
     align-items: center;
+    margin: auto;
     margin-top: 50px;
 }
 
@@ -129,10 +136,26 @@ a {
     }
 }
 
+/* Short Bio */
+
+.short-bio {
+    margin: 20px 0;
+}
+
+.short-bio p {
+    padding-bottom: 5px;
+}
+
+.short-bio p a {
+    color: #4A2040;
+    font-weight: bold;
+    text-decoration: none;
+}
+
 /* Social Links */
 
 .social-links {
-    margin: 10px auto 40px auto;
+    margin: 20px auto;
 }
 
 .social-links .fab {
@@ -154,12 +177,14 @@ a {
     text-align: left;
     font-family: 'Fira Mono', monospace;
     font-weight: 400;
+    margin-top: 50px;
 }
 
 .terminal-header {
     background-color: rgba(64, 32, 64, 0.75);
     color: #EFF2F1;
     padding: 7px 20px 5px 20px;
+    font-weight: bold;
     display: flex;
     justify-content: space-between;
     border-radius: 10px 10px 0 0;
@@ -184,11 +209,15 @@ a {
 }
 
 .statement {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 #top.statement {
     margin-top: 10px;
+}
+
+#bottom.statement {
+    margin-bottom: 40px;
 }
 
 #bottom.statement .input span {
@@ -225,11 +254,6 @@ a {
     margin: 50px auto;
 }
 
-#contact h2 {
-    font-size: 1.5em;
-    margin: 30px auto;
-}
-
 .contact-links {
     display: flex;
     flex-direction: column;
@@ -251,6 +275,7 @@ a {
 .copyright {
     position: relative;
     margin: 100px auto 50px auto;
+    font-size: 14px;
     width: 100%;
     max-width: 100%;
     height: 30px;
@@ -273,11 +298,10 @@ a {
     }
     .nav {
         position: relative;
-        margin-top: 10px;
         width: 100%;
         max-width: 100%;
         margin: auto;
-        height: 70px;
+        height: 80px;
     }
     .nav-items {
         display: block;
