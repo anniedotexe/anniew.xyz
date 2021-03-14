@@ -8,7 +8,7 @@
 body {
     font-family: 'Noto Sans', sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1em;
     color: #151515;
     background-color: #EFF2F1;
 }
@@ -20,7 +20,7 @@ h1, h2 {
 
 h2 {
     font-size: 1.6em;
-    margin: 50px auto;
+    margin: auto auto 25px auto;
 }
 
 a {
@@ -118,6 +118,10 @@ a {
     animation: typing 3s steps(11, end), blink 1s step-end infinite;
 }
 
+.typewriter h1 a {
+    text-decoration: none;
+}
+
 @keyframes typing {
     from {
         width: 0%;
@@ -139,7 +143,7 @@ a {
 /* Short Bio */
 
 .short-bio {
-    margin: 20px 0;
+    margin: 20px auto;
 }
 
 .short-bio p {
@@ -152,10 +156,15 @@ a {
     text-decoration: none;
 }
 
+.short-bio p a:hover {
+    color: #92374D;
+    transition: all 0.2s ease-out;
+}
+
 /* Social Links */
 
 .social-links {
-    margin: 20px auto;
+    margin: 0 auto 20px auto;
 }
 
 .social-links .fab {
@@ -167,6 +176,23 @@ a {
 }
 
 .social-links .fab:hover, .social-links .fab:focus {
+    color: #92374D;
+    transition: all 0.2s ease-out;
+}
+
+/* Quote Under Section Titles */
+
+.quote {
+    position: relative;
+    margin: auto;
+    font-style: italic;
+}
+
+.quote a {
+    text-decoration: none;
+}
+
+.quote a:hover {
     color: #92374D;
     transition: all 0.2s ease-out;
 }
@@ -258,6 +284,7 @@ a {
     display: flex;
     flex-direction: column;
     text-align: center;
+    margin: 50px auto;
 }
 
 .contact-links a {
@@ -285,6 +312,9 @@ a {
 /* For Larger Screen */
 
 @media only screen and (min-width: 768px) {
+    h2 {
+        font-size: 2em;
+    }
     .page {
         max-width: 1000px;
         text-align: center;
@@ -328,7 +358,7 @@ a {
         border-right: 35px solid #4A2040;
     }
     .social-links {
-        margin: 20px auto 40px auto;
+        margin: 0 auto 40px auto;
     }
     .contact-links {
         flex-direction: row;
