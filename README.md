@@ -12,7 +12,7 @@ This is the source code for my personal website - a developer and photographer p
   <a href="http://anniew.xyz"><img src="./img/readme-banner.png" alt="top of the landing page"></a>
 </p>
 
-#### Tools Used
+### Built With
 - :blue_heart: [HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
 - :purple_heart: [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)
 - :blue_heart: [Font Awesome](https://fontawesome.com/) for the icons
