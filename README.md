@@ -5,7 +5,6 @@ This is the source code for my personal website - a developer and photographer p
 <p align="center">
     <img alt="HTML5" src="https://img.shields.io/badge/-HTML5-E44D26?style=flat&logo=html5&logoColor=white"/>
     <img alt="CSS3" src="https://img.shields.io/badge/-CSS3-2965f1?style=flat&logo=css3&logoColor=white"/>
-    <img alt="Netlify Status" src="https://api.netlify.com/api/v1/badges/532875eb-3c9d-4826-85ba-bbb7afbce9f8/deploy-status"/>
 </p>
 
 <p align="center">
@@ -18,7 +17,7 @@ This is the source code for my personal website - a developer and photographer p
 - :blue_heart: [Font Awesome](https://fontawesome.com/) for the icons
 - :purple_heart: [CSS-Tricks](https://css-tricks.com/snippets/css/typewriter-effect/) for the typewriter animation
 - :blue_heart: [Google Domains](https://domains.google/) for the cool domain
-- :purple_heart: [Netlify](https://www.netlify.com/) for hosting
+- :purple_heart: [GitHub Pages](https://pages.github.com/) for hosting
 
 ---
 
