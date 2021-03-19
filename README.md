@@ -5,19 +5,21 @@ This is the source code for my personal website - a developer and photographer p
 <p align="center">
     <img alt="HTML5" src="https://img.shields.io/badge/-HTML5-E44D26?style=flat&logo=html5&logoColor=white"/>
     <img alt="CSS3" src="https://img.shields.io/badge/-CSS3-2965f1?style=flat&logo=css3&logoColor=white"/>
+    <img alt="Netlify Status" src="https://api.netlify.com/api/v1/badges/a97a8c74-04cc-4b59-b7b9-71d2800ca95f/deploy-status"/>
 </p>
 
 <p align="center">
-  <a href="http://anniew.xyz"><img src="./img/readme-banner.png" alt="top of the landing page"></a>
+  <a href="http://anniew.xyz"><img src="./img/social-preview.png" alt="top of the landing page"></a>
 </p>
 
 ### Built With
+
 - :blue_heart: [HTML5](https://www.w3schools.com/html/)
 - :purple_heart: [CSS3](https://www.w3schools.com/css/)
 - :blue_heart: [Font Awesome](https://fontawesome.com/) for the icons
 - :purple_heart: [CSS-Tricks](https://css-tricks.com/snippets/css/typewriter-effect/) for the typewriter animation
 - :blue_heart: [Google Domains](https://domains.google/) for the cool domain
-- :purple_heart: [GitHub Pages](https://pages.github.com/) for hosting
+- :purple_heart: [Netlify](https://www.netlify.com/) for hosting
 
 ---
 
@@ -53,4 +55,3 @@ If you like my content or find this code useful, give it a :star: or support me 
 ### License
 
 Copyright &copy; 2021 Annie Wu. All rights reserved.
-
