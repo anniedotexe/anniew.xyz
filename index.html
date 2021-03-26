@@ -43,11 +43,16 @@
 <body>
     <div class="page">
         <div class="page-container">
-            <div class="nav">
+            <div class="nav" id="home">
                 <a href="/"><img src="img/logo.svg" class="logo" alt="AW logo"></a>
+                <input type="checkbox" id="menu-button" />
+                <label class="menu-icon" for="menu-button">
+                    <span></span>
+                </label>
                 <ul class="nav-items">
-                    <li><a href="projects">Projects</a></li>
-                    <li><a href="photos">Photos</a></li>
+                    <li id="home-label"><a href="#home">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#photos">Photos</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
@@ -58,14 +63,7 @@
 
             <div class="short-bio">
                 <p>Hello! I am a developer and photographer.</p>
-                <p>Check out my <a href="projects">projects</a> and <a href="photos">photography</a> portfolio.</p>
-            </div>
-
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/anniewu2303/" class="fab fa-linkedin" aria-label="LinkedIn"></a>
-                <a href="https://github.com/anniewu2303/" class="fab fa-github" aria-label="GitHub"></a>
-                <a href="https://www.instagram.com/anniedotexe/" class="fab fa-instagram" aria-label="Instagram"></a>
-                <a href="https://twitter.com/anniedotexe/" class="fab fa-twitter" aria-label="Twitter"></a>
+                <p>Check out my <a href="#projects">projects</a> and <a href="#photos">photography</a> portfolio.</p>
             </div>
 
             <div class="about">
@@ -88,9 +86,7 @@
                     </div>
                     <div class="statement">
                         <p class="input">annie.contact</p>
-                        <p class="return">[<a href="mailto:anniewu2303@gmail.com">anniewu2303@gmail.com</a>,
-                            <a href="https://www.linkedin.com/in/anniewu2303/">linkedin</a>]
-                        </p>
+                        <p class="return"><a href="mailto:anniewu2303@gmail.com">anniewu2303@gmail.com</a></p>
                     </div>
                     <div class="statement">
                         <p class="input">annie.resume</p>
@@ -106,8 +102,8 @@
                     </div>
                     <div class="statement">
                         <p class="input">annie.interests</p>
-                        <p class="return">[photography, vibing to music, building PCs, video games, creating bots,
-                            svg animation, mechanical keebs]</p>
+                        <p class="return">[photography, vibing to music, video games, building PCs, mechanical keebs]
+                        </p>
                     </div>
                     <div class="statement">
                         <p class="input">annie.otherSocials</p>
@@ -122,14 +118,305 @@
                 </div>
             </div>
 
-            <div id="contact">
+            <div class="section-title" id="projects">
+                <h2>> Projects</h2>
+                <p class="quote">"It’s not a bug – it’s an undocumented feature." - Anonymous</p>
+                <div class="project-card">
+                    <h3 class="project-title">If Twitter was Owned by Discord - Mobile UI Concept</h3>
+                    <p class="project-description">
+                        This project was inspired by <a
+                            href="https://www.reddit.com/r/discordapp/comments/lxjoe1/if_twitter_were_owned_by_discord/">this
+                            concept art</a> on reddit. I decided to make a pure HTML, CSS, JavaScript version of this
+                        idea. Users can interact with the reactions, follow button, and tweets navigation bar. This
+                        project was also created for HTML, CSS, and JS learning purposes.
+                    <div class="project-skills">
+                        <span class="project-skill">HTML5</span>
+                        <span class="project-skill">CSS3</span>
+                        <span class="project-skill">JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://twitcord.anniew.xyz/" class="live-demo button">Live Demo
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <a href="https://github.com/anniewu2303/twitcord" class="source button">
+                            <i class="fab fa-github"></i> Open Source
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3 class="project-title">RNN Twitter Bot</h3>
+                    <p class="project-description">This is a <a
+                            href="https://towardsdatascience.com/illustrated-guide-to-recurrent-neural-networks-79e5eb8049c9">
+                            recurrent neural network</a> Twitter bot written in Python with <a
+                            href="https://github.com/tweepy/tweepy">Tweepy</a>. This will tweet newly generated
+                        text from the trained model every hour to a Twitter Account. Find yourself some text to train
+                        the model with <a href="https://github.com/minimaxir/textgenrnn">textgenrnn</a> and follow the
+                        <a href="https://github.com/anniewu2303/RNN-Twitter-Bot#getting-started">ReadMe</a> to create
+                        your own recurrent neural network Twitter bot.<br><br>
+                        My <a href="https://twitter.com/dickinson_rnn">@dickinson_rnn</a> Twitter bot generates text
+                        with a temperature of 0.7 and a loss of 0.1894. It was originally deployed on a Google Cloud
+                        Platform virtual
+                        machine instance. However, the free trial period ended, so it is now scheduled to run locally on
+                        PC login.
+                    </p>
+                    <div class="project-skills">
+                        <span class="project-skill">Python3</span>
+                        <span class="project-skill">GCP</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://twitter.com/dickinson_rnn" class="live-demo button">Live Demo
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <a href="https://github.com/anniewu2303/RNN-Twitter-Bot" class="source button">
+                            <i class="fab fa-github"></i> Open Source
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3 class="project-title">Instagram Like & Comment Bot</h3>
+                    <p class="project-description">This Instagram script automates the process of going through
+                        hashtag(s) and liking and/or commenting on the posts on a Google Chrome browser. Want to grow
+                        your community and following without the negative implications of an actual bot? Customize the
+                        list of randomly chosen comments to your liking, and no one will even notice that it is not
+                        actually you commenting on their posts.</p>
+                    <div class="project-skills">
+                        <span class="project-skill">Python3</span>
+                        <span class="project-skill">Selenium WebDriver</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/anniewu2303/Instagram-Like-Comment-Bot#Demo"
+                            class="live-demo button button">
+                            Live Demo <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <a href="https://github.com/anniewu2303/Instagram-Like-Comment-Bot"
+                            class="source button button">
+                            <i class="fab fa-github"></i> Open Source
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3 class="project-title">Twitter Like & Retweet Bot</h3>
+                    <p class="project-description">This is a Twitter bot written in Python with
+                        <a href="https://github.com/tweepy/tweepy">Tweepy</a>. Run this script to automate liking and/or
+                        retweeting tweets that contain single or multiple keywords and hashtags. You can customize the
+                        search keywords, whether you want to get recent or popular results, and if you want the bot to
+                        run continuously or not.<br><br>
+                        My <a href="https://twitter.com/ac_celeste_bot">@ac_celeste_bot</a> Twitter bot likes and
+                        retweets anything about "Animal Crossing Celeste". <em>I did not realize that there is also a
+                            game called Celeste, so the bot also retweets any tweets talking about both of these
+                            games.</em> It was originally deployed on an Amazon Web Services Elastic Compute Cloud
+                        instance. However, the free trial period ended, so it is now hosted on PythonAnywhere.
+                    </p>
+                    <div class="project-skills">
+                        <span class="project-skill">Python3</span>
+                        <span class="project-skill">AWS</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://twitter.com/ac_celeste_bot" class="live-demo button">
+                            Live Demo <i class="fas fa-external-link-alt"></i></a>
+                        <a href="https://github.com/anniewu2303/Twitter-Retweet-Bot" class="source button">
+                            <i class="fab fa-github"></i> Open Source</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3 class="project-title">Personal Website</h3>
+                    <p class="project-description">It's this site you are currently visiting!! This is my developer
+                        and photographer portfolio. It is a responsive website with a pop of text animation. This
+                        project was also created for HTML and CSS learning purposes.
+                    </p>
+                    <div class="project-skills">
+                        <span class="project-skill">HTML5</span>
+                        <span class="project-skill">CSS3</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/anniewu2303/portfolio" class="source button">
+                            <i class="fab fa-github"></i> Source</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3 class="project-title">CPP Events Calendar App</h3>
+                    <p class="project-description">A web application using a Spring Boot backend and ReactJS frontend
+                        deployed on an Amazon Web Services Elastic Compute Cloud instance that aggregates Cal Poly
+                        Pomona campus events for simple viewing and creates sharable calendar links. I constructed data
+                        access objects, service layers, and rest controllers for users, events, and calendars, and I
+                        implemented REST API operations to manipulate and retrieve user, event, and calendar data as
+                        JSON objects in a MongoDB database.<br><br>
+                        This project was created by a team of 5 for our Software Engineering course.
+                        The idea for this web app came about because our university's campus events were all spread out
+                        on different pages, such as the main site, career center, ASI, and by each college. We wanted to
+                        webscrape all the events and put it in one place. We also wanted to include the option of adding
+                        campus events or personally created events to a calendar that can be shared with others via
+                        links. </p>
+                    <div class="project-skills">
+                        <span class="project-skill">Java</span>
+                        <span class="project-skill">Spring Boot</span>
+                        <span class="project-skill">Maven</span>
+                        <span class="project-skill">MongoDB</span>
+                        <span class="project-skill">AWS</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Oops-404/Cs4800-Oops-404" class="source button">
+                            <i class="fab fa-github"></i> Source</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-title" id="photos">
+                <h2><i class="fas fa-camera-retro"></i> Photos</h2>
+                <p class="quote">“Photography is the story I fail to put into words.” – <a
+                        href="https://www.instagram.com/destinsparks/">Destin Sparks</a></p>
+                <div class="masonry-layout">
+                    <div class="brick">
+                        <img src="https://live.staticflickr.com/65535/48904657791_0eb41b6637_b.jpg"
+                            alt="Kitty hiding behind plant branches" title="Kitty">
+                    </div>
+                    <div class="brick">
+                        <img src="https://live.staticflickr.com/65535/48887909508_ecfa8ca997_b.jpg"
+                            alt="35mm film photo - LOVE letters sign in a Las Vegas hotel" title="35mm - L.O.V.E.">
+                    </div>
+                    <div class="brick">
+                        <img src="https://live.staticflickr.com/65535/49377353001_fd7ffcc596_b.jpg"
+                            alt="A building in Pasadena, CA" title="Pasadena Building">
+                    </div>
+                    <div class="brick">
+                        <img src="https://live.staticflickr.com/1963/45605882391_608f6b0c2e_b.jpg"
+                            alt="Goose with the Seattle skyline in the background" title="Honk">
+                    </div>
+                    <div class="brick">
+                        <img src="https://live.staticflickr.com/1953/44691939805_2c308ea5d7_b.jpg"
+                            alt="San Diego Safari landscape" title="San Diego Safari">
+                    </div>
+                    <div class="brick">
+                        <img src="https://live.staticflickr.com/65535/47850008771_69ee3d5e16_b.jpg"
+                            alt="Hermann Park Lake in Houston, Texas with birds flying" title="Hermann Park Lake">
+                    </div>
+                    <div class="brick">
+                        <img src="https://live.staticflickr.com/1974/44691932235_7a97da7d3f_b.jpg"
+                            alt="Leaves in the sun" title="Leaves">
+                    </div>
+                    <div class="brick">
+                        <img src="https://live.staticflickr.com/65535/47850007431_223df9dfd3_b.jpg"
+                            alt="Kitty with squinting eyes" title="Kitty">
+                    </div>
+                    <div class="brick">
+                        <img src="https://live.staticflickr.com/1902/45605875431_c73e0fa3d7_b.jpg" alt="At the beach"
+                            title="At the Beach">
+                    </div>
+                    <div class="brick">
+                        <img src="https://live.staticflickr.com/1917/30664843797_89da7a353f_b.jpg"
+                            alt="Multidirectional cross paths in Pasadena, CA" title="Where Do I Cross">
+                    </div>
+                    <div class="brick">
+                        <img src="https://live.staticflickr.com/1916/44691936095_fd7de3579c_b.jpg"
+                            alt="Snoqualmie Waterfall in Seattle, WA" title="Waterfall">
+                    </div>
+
+                    <div class="brick">
+                        <img src="https://live.staticflickr.com/65535/48887909523_6b2fac404b_b.jpg"
+                            alt="35mm film photo - On the road to Las Vegas" title="35mm - On the Road to Las Vegas">
+                    </div>
+                    <div class="brick">
+                        <img src="https://live.staticflickr.com/1933/44691942895_8ab68a7200_b.jpg"
+                            alt="San Diego sunset at the beach" title="San Diego Sunset">
+                    </div>
+                    <div class="brick">
+                        <img src="https://live.staticflickr.com/1933/30664857307_864594747c_b.jpg"
+                            alt="Blue ocean and sky with fluffy clouds" title="Blue and Fluffy">
+                    </div>
+                    <div class="brick">
+                        <img src="https://live.staticflickr.com/1902/45605875431_c73e0fa3d7_b.jpg" alt="At the beach"
+                            title="At the Beach">
+                    </div>
+                    <div class="brick">
+                        <img src="https://live.staticflickr.com/1929/44691937385_b46543f79d_b.jpg" alt="Buildings"
+                            title="Buildings">
+                    </div>
+                    <div class="brick">
+                        <img src="https://live.staticflickr.com/1958/45555310682_6a3a92eec0_b.jpg"
+                            alt="Walking path at the beach" title="Beach Walk">
+                    </div>
+                    <div class="brick">
+                        <img src="https://live.staticflickr.com/65535/50775827653_fe8545f7bb_b.jpg"
+                            alt="35mm film photo - Car side mirror selfie" title="35mm - Car Side Mirror Selfie">
+                    </div>
+                    <div class="brick">
+                        <img src="https://live.staticflickr.com/1969/44880411914_a233fb64d6_b.jpg"
+                            alt="Seattle clocktower in between sunset and blue hour"
+                            title="In Between Sunset and Blue Hour">
+                    </div>
+                    <div class="brick">
+                        <img src="https://live.staticflickr.com/65535/48888391711_055bbe737e_b.jpg" alt="Yellow lantern"
+                            title="Yellow">
+                    </div>
+                    <div class="brick">
+                        <img src="https://live.staticflickr.com/65535/50343353806_28e6fa628c_b.jpg"
+                            alt="House on Venice Canals reflection" title="House on Venice Canals">
+                    </div>
+                    <div class="brick">
+                        <img src="https://live.staticflickr.com/1953/30664853227_a2399d21d9_b.jpg"
+                            alt="Sunny blue skies with painted clouds and a slope of trees" title="Painted Clouds">
+                    </div>
+                    <div class="brick">
+                        <img src="https://live.staticflickr.com/1978/44691925945_fd13fcb504_b.jpg"
+                            alt="Person's back with lots of bokeh on the street at night"
+                            title="Low Light Street Bokeh">
+                    </div>
+
+                    <div class="brick">
+                        <img src="https://live.staticflickr.com/1951/45605887431_64a43bd161_b.jpg" alt="Autumn leaves"
+                            title="Autumn Leaves">
+                    </div>
+                    <div class="brick">
+                        <img src="https://live.staticflickr.com/1975/45605886531_ed529b5c87_b.jpg"
+                            alt="San Diego Safari landscape reflection" title="San Diego Safari Reflection">
+                    </div>
+                    <div class="brick">
+                        <img src="https://live.staticflickr.com/1925/43788177460_e4cae175b6_b.jpg" alt="Acorn"
+                            title="Acorn">
+                    </div>
+                    <div class="brick">
+                        <img src="https://live.staticflickr.com/1977/30664863717_c1431774da_b.jpg"
+                            alt="San Diego Safari landscape with trees" title="San Diego Safari">
+                    </div>
+                    <div class="brick">
+                        <img src="https://live.staticflickr.com/4874/46182980091_bde78be58d_b.jpg"
+                            alt="Birds over the ocean at sunset" title="Birds at Sunset">
+                    </div>
+                    <div class="brick">
+                        <img src="https://live.staticflickr.com/1941/30664852817_cfc3bc6a1f_b.jpg"
+                            alt="On the highway to Snoqualmie, blue skies and surrounded by trees"
+                            title="On the highway to Snoqualmie">
+                    </div>
+                    <div class="brick">
+                        <img src="https://live.staticflickr.com/1910/44881250424_83a0acfbf1_b.jpg"
+                            alt="Clown fish at the aquarium" title="Nemo">
+                    </div>
+                    <div class="brick">
+                        <img src="https://live.staticflickr.com/1931/44691938525_8556b4252b_b.jpg"
+                            alt="Fish at the aquarium" title="Fish">
+                    </div>
+                    <div class="brick">
+                        <img src="https://live.staticflickr.com/65535/47850007591_9cd35cc661_b.jpg"
+                            alt="Sting ray at the aquarium" title="Ray">
+                    </div>
+                    <div class="brick">
+                        <img src="https://live.staticflickr.com/65535/49377551182_bd49989330_b.jpg"
+                            alt="On the streets of Pasadena, CA" title="On the streets of Pasadena">
+                    </div>
+                    <div class="brick">
+                        <img src="https://live.staticflickr.com/65535/47850007841_e66fd34615_b.jpg" alt="Bird model"
+                            title="Bird Model">
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-title" id="contact">
                 <h2>> Contact Me</h2>
-                <div class="contact-links">
-                    <a href="mailto:anniewu2303@gmail.com" id="first">Email</a>
-                    <a href="https://www.linkedin.com/in/anniewu2303/">LinkedIn</a>
-                    <a href="https://github.com/anniewu2303/">GitHub</a>
-                    <a href="https://www.instagram.com/anniedotexe/">Instagram</a>
-                    <a href="https://twitter.com/anniedotexe/">Twitter</a>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/anniewu2303/" class="fab fa-linkedin button" aria-label="LinkedIn"></a>
+                    <a href="https://github.com/anniewu2303/" class="fab fa-github button" aria-label="GitHub"></a>
+                    <a href="https://www.instagram.com/anniedotexe/" class="fab fa-instagram button" aria-label="Instagram"></a>
+                    <a href="https://twitter.com/anniedotexe/" class="fab fa-twitter button" aria-label="Twitter"></a>
                 </div>
             </div>
 

@@ -23,6 +23,11 @@ h2 {
     margin: auto auto 25px auto;
 }
 
+h3 {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1.2em;
+}
+
 a {
     color: inherit;
 }
@@ -33,6 +38,7 @@ a {
 }
 
 .page {
+    position: absolute;
     display: block;
     min-height: 100%;
     text-align: center;
@@ -40,37 +46,55 @@ a {
 }
 
 .page-container {
+    position: relative;
     display: block;
     min-height: 100%;
     text-align: center;
 }
 
+.section-title {
+    margin: 100px auto;
+}
+
+.button {
+    transition: all .2s ease-in-out;
+}
+
+.button:hover {
+    transform: scale(1.05);
+}
+
 /* Nav Bar */
 
 .nav {
-    position: relative;
+    position: static;
+    display: block;
+    top: 0;
     padding-top: 10px;
     color: #EFF2F1;
     width: 100%;
-    max-width: 100%;
     height: 60px;
 }
 
 /* Nav Menu Items */
 
 .nav-items {
-    display: flex;
-    position: relative;
-    margin-right: 0;
-    padding: 15px 0 0 10px;
-    list-style: none;
-    overflow: hidden;
+    display: none;
+    margin: 50px 0 0 0;
+    transition: max-height .2s ease-out;
+}
+
+.nav-items li {
+    position: static;
+    background-color: #EFF2F1;
+    margin: 0 auto;
 }
 
 .nav-items li a {
     display: block;
-    padding-right: 0;
-    color: #151515;
+    position: static;
+    padding: 15px;
+    color: #92374e;
     background-color: #EFF2F1;
     text-decoration: none;
     font-size: 16px;
@@ -78,12 +102,73 @@ a {
 }
 
 .nav-items li a:hover, .nav-items li a:focus {
-    color: #92374D;
     transition: all 0.2s ease-out;
 }
 
-.nav-items li a.current {
-    color: #4A2040;
+/* Nav Menu Button */
+
+.menu-icon {
+    cursor: pointer;
+    display: block;
+    float: right;
+    padding: 22px 0;
+    position: relative;
+    user-select: none;
+}
+
+.menu-icon span {
+    background: #151515;
+    display: block;
+    height: 3px;
+    position: relative;
+    width: 32px;
+}
+
+.menu-icon span:before, .menu-icon span:after {
+    background: #151515;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+
+.menu-icon span:before {
+    top: -10px;
+}
+
+.menu-icon span:after {
+    bottom: -10px;
+}
+
+#menu-button {
+    display: none;
+}
+
+#menu-button:checked~.nav-items {
+    max-height: 275px;
+    display: block;
+    position: relative;
+    text-align: center;
+    list-style: none;
+    overflow: hidden;
+}
+
+#menu-button:checked~.menu-icon span {
+    background: transparent;
+}
+
+#menu-button:checked~.menu-icon span:before {
+    transform: rotate(-45deg);
+}
+
+#menu-button:checked~.menu-icon span:after {
+    transform: rotate(45deg);
+}
+
+#menu-button:checked~.menu-icon:not(.steps) span:before, #menu-button:checked~.menu-icon:not(.steps) span:after {
+    top: 0;
 }
 
 /* Logo */
@@ -98,7 +183,6 @@ a {
 /* Name Typewriter Animation */
 
 .typewriter {
-    position: relative;
     display: block;
     width: max-content;
     text-align: center;
@@ -161,29 +245,9 @@ a {
     transition: all 0.2s ease-out;
 }
 
-/* Social Links */
-
-.social-links {
-    margin: 0 auto 20px auto;
-}
-
-.social-links .fab {
-    padding: 5px;
-    font-size: 25px;
-    text-align: center;
-    text-decoration: none;
-    color: #151515;
-}
-
-.social-links .fab:hover, .social-links .fab:focus {
-    color: #92374D;
-    transition: all 0.2s ease-out;
-}
-
 /* Quote Under Section Titles */
 
 .quote {
-    position: relative;
     margin: auto;
     font-style: italic;
 }
@@ -253,6 +317,7 @@ a {
 
 .input {
     color: #EFF2F1;
+    margin-bottom: 5px;
 }
 
 .return {
@@ -274,27 +339,122 @@ a {
     }
 }
 
-/* Contact Me */
+/* Projects */
 
-#contact {
+.project-card {
+    position: relative;
+    display: block;
     margin: 50px auto;
+    text-align: left;
+    padding: 0 30px;
+    background-color: #F8F8F8;
+    border: 1px solid #EFF2F1;
+    border-radius: 3px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
 }
 
-.contact-links {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin: 50px auto;
+.project-title {
+    margin: 30px auto;
 }
 
-.contact-links a {
-    margin: 10px auto;
+.project-description {
+    margin: 25px auto;
+}
+
+.project-description a {
+    color: #4A2040;
+    font-weight: bold;
     text-decoration: none;
 }
 
-.contact-links a:hover {
+.project-description a:hover {
     color: #92374D;
     transition: all 0.2s ease-out;
+}
+
+.project-skills {
+    position: relative;
+    display: block;
+    margin: 10px auto;
+}
+
+.project-skills span {
+    border: 2px solid #47C2FF;
+    border-radius: 5px;
+    margin: auto 8px 10px auto;
+    padding: 5px;
+    position: relative;
+    display: inline-block
+}
+
+.project-links {
+    position: relative;
+    display: block;
+    margin: 10px auto 30px auto;
+}
+
+.project-links a {
+    border-radius: 5px;
+    margin: auto 15px 10px auto;
+    padding: 8px;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+}
+
+.project-links .live-demo {
+    color: #F8F8F8;
+    background-color: rgba(64, 32, 64, 0.75);
+    border: 1px solid rgba(64, 32, 64, 0.75);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+
+.project-links .source {
+    color: #4A2040;
+    border: 1px solid #F8F8F8;
+    background-color: #F8F8F8;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+
+/* Photos */
+
+.masonry-layout {
+    display: block;
+    margin: 50px auto;
+    column-gap: 1.4em;
+}
+
+.masonry-layout .brick {
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 1.4em;
+}
+
+.masonry-layout .brick img {
+    transition: all .5s ease-in-out;
+    backface-visibility: hidden;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+/* Contact Me */
+
+.social-links {
+    margin: 50px auto;
+}
+
+.social-links .fab {
+    padding: 5px;
+    margin: 0 10px;
+    font-size: 25px;
+    text-align: center;
+    text-decoration: none;
+    color: #151515;
+}
+
+.social-links .fab:hover, .social-links .fab:focus {
+    color: #92374D;
 }
 
 /* Footer */
@@ -316,6 +476,7 @@ a {
         font-size: 2em;
     }
     .page {
+        position: relative;
         max-width: 1000px;
         text-align: center;
         align-items: center;
@@ -327,28 +488,42 @@ a {
         margin: 0 auto;
     }
     .nav {
+        display: block;
         position: relative;
+        margin: 0;
         width: 100%;
         max-width: 100%;
         margin: auto;
-        height: 80px;
     }
     .nav-items {
         display: block;
         position: relative;
-        padding: 0;
-        float: right;
+        margin-left: 50px;
         list-style: none;
         overflow: hidden;
+        float: right;
+        margin: 0;
+        padding: 0;
+        max-width: fit-content;
     }
     .nav-items li {
         float: left;
+        max-height: none;
     }
     .nav-items li a {
-        margin: 22px 30px;
+        margin-left: 40px;
+        padding: 14px;
+        color: #151515;
     }
-    .logo {
-        margin: 20px;
+    .nav-items li a:hover, .nav-items li a:focus {
+        color: #92374e;
+        transition: all 0.2s ease-out;
+    }
+    .menu-icon {
+        display: none;
+    }
+    #home-label {
+        display: none;
     }
     .typewriter {
         margin-top: 40px;
@@ -357,14 +532,18 @@ a {
         font-size: 3.2em;
         border-right: 35px solid #4A2040;
     }
-    .social-links {
-        margin: 0 auto 40px auto;
+}
+
+/* Photos layout for medium and larger screens */
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .masonry-layout {
+        column-count: 2;
     }
-    .contact-links {
-        flex-direction: row;
-        justify-content: center;
-    }
-    .contact-links a {
-        margin: auto 20px;
+}
+
+@media only screen and (min-width: 1024px) {
+    .masonry-layout {
+        column-count: 3;
     }
 }
