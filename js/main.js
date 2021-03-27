@@ -1,13 +1,14 @@
 // Show/Hide nav bar on scroll
 
 var previousScrollPosition = window.pageYOffset;
+var nav = document.getElementById("nav");
 window.onscroll = function () {
     var currentScrollPosition = window.pageYOffset;
     if (previousScrollPosition > currentScrollPosition) {
-        document.getElementById("nav").style.top = "0";
+        nav.style.top = "0";
     }
     else {
-        document.getElementById("nav").style.top = "-60px";
+        nav.style.top = "-60px";
     }
     previousScrollPosition = currentScrollPosition;
 }
@@ -24,7 +25,7 @@ if (window.innerWidth <= 768) {
     // Toggle to close menu if user clicks a link or anywhere else
     document.addEventListener("click", function (event) {
         if ((navItems.classList.contains("show")) && (event.target != menuIcon)) {
-            navItems.classList.toggle("show");
+            navItems.classList.remove("show");
         }
     });
 }

@@ -44,6 +44,7 @@ a {
     min-height: 100%;
     text-align: center;
     margin-top: 60px;
+    top: 0;
     padding: 0 20px;
 }
 
@@ -166,6 +167,7 @@ a {
     width: 100%;
     max-height: max-content;
     transition: max-height .2s ease-out;
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.25);
 }
 
 /* Name Typewriter Animation */
@@ -485,8 +487,10 @@ a {
         left: 0;
         right: 0;
         text-align: center;
-        max-width: 1000px;
         overflow: hidden;
+    }
+    .navbar {
+        max-width: 1000px;
     }
     #home-nav-label {
         display: none;
