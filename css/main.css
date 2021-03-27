@@ -9,7 +9,7 @@
 body {
     font-family: 'Noto Sans', sans-serif;
     font-weight: 400;
-    font-size: 1em;
+    font-size: 16px;
     color: #151515;
     background-color: #EFF2F1;
 }
@@ -19,14 +19,8 @@ h1, h2 {
     color: rgba(64, 32, 64, 0.75);
 }
 
-h2 {
-    font-size: 26px;
-    padding: 80px 0 30px 0;
-}
-
 h3 {
     font-family: 'Noto Sans', sans-serif;
-    font-size: 20px;
 }
 
 a {
@@ -56,6 +50,11 @@ a {
 
 .section-title {
     margin: 100px auto;
+}
+
+.section-title h2 {
+    font-size: 26px;
+    padding: 80px 0 30px 0;
 }
 
 .button {
@@ -344,8 +343,9 @@ a {
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11), 0 4px 4px rgba(0, 0, 0, 0.11), 0 6px 8px rgba(0, 0, 0, 0.11), 0 8px 16px rgba(0, 0, 0, 0.11);
 }
 
-.project-title {
+.project-card h3 {
     margin: 30px auto;
+    font-size: 20px;
 }
 
 .project-description {
@@ -463,8 +463,12 @@ a {
 /* For Larger Screen */
 
 @media only screen and (min-width: 768px) {
-    h2 {
-        font-size: 2em;
+    .typewriter h1 {
+        font-size: 50px;
+        border-right: 35px solid #4A2040;
+    }
+    .section-title h2 {
+        font-size: 35px;
     }
     .page {
         position: relative;
@@ -517,10 +521,6 @@ a {
     .nav-items li a:hover, .nav-items li a:focus {
         color: #92374e;
         transition: all 0.2s ease-out;
-    }
-    .typewriter h1 {
-        font-size: 3.2em;
-        border-right: 35px solid #4A2040;
     }
 }
 
