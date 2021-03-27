@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-size: 100%;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -19,13 +20,13 @@ h1, h2 {
 }
 
 h2 {
-    font-size: 1.6em;
+    font-size: 26px;
     margin: auto auto 25px auto;
 }
 
 h3 {
     font-family: 'Noto Sans', sans-serif;
-    font-size: 1.2em;
+    font-size: 20px;
 }
 
 a {
@@ -42,6 +43,7 @@ a {
     display: block;
     min-height: 100%;
     text-align: center;
+    margin-top: 60px;
     padding: 0 20px;
 }
 
@@ -49,6 +51,7 @@ a {
     position: relative;
     display: block;
     min-height: 100%;
+    margin-top: 60px;
     text-align: center;
 }
 
@@ -66,33 +69,36 @@ a {
 
 /* Nav Bar */
 
-.nav {
-    position: static;
+#nav {
+    position: fixed;
     display: block;
     top: 0;
-    padding-top: 10px;
-    color: #EFF2F1;
+    z-index: 3;
+    background-color: #EFF2F1;
     width: 100%;
     height: 60px;
+    transition: top 0.3s;
+    margin-bottom: 60px;
 }
 
 /* Nav Menu Items */
 
 .nav-items {
     display: none;
-    margin: 50px 0 0 0;
+    margin-top: 50px;
+    max-height: 0;
     transition: max-height .2s ease-out;
 }
 
 .nav-items li {
-    position: static;
+    position: relative;
+    color: #EFF2F1;
     background-color: #EFF2F1;
     margin: 0 auto;
 }
 
 .nav-items li a {
     display: block;
-    position: static;
     padding: 15px;
     color: #92374e;
     background-color: #EFF2F1;
@@ -105,18 +111,27 @@ a {
     transition: all 0.2s ease-out;
 }
 
-/* Nav Menu Button */
+/* Logo */
 
-.menu-icon {
-    cursor: pointer;
+.logo {
     display: block;
+    float: left;
+    margin: 15px 0;
+    padding: 0 20px;
+    height: 30px;
+}
+
+/* Menu Button */
+
+#menu-icon {
+    cursor: pointer;
     float: right;
-    padding: 22px 0;
+    padding: 28px 20px;
     position: relative;
     user-select: none;
 }
 
-.menu-icon span {
+#menu-icon span {
     background: #151515;
     display: block;
     height: 3px;
@@ -124,7 +139,7 @@ a {
     width: 32px;
 }
 
-.menu-icon span:before, .menu-icon span:after {
+#menu-icon span:before, #menu-icon span:after {
     background: #151515;
     content: '';
     display: block;
@@ -134,50 +149,23 @@ a {
     width: 100%;
 }
 
-.menu-icon span:before {
+#menu-icon span:before {
     top: -10px;
 }
 
-.menu-icon span:after {
+#menu-icon span:after {
     bottom: -10px;
 }
 
-#menu-button {
-    display: none;
-}
-
-#menu-button:checked~.nav-items {
-    max-height: 275px;
+.show {
     display: block;
-    position: relative;
+    position: static;
     text-align: center;
     list-style: none;
     overflow: hidden;
-}
-
-#menu-button:checked~.menu-icon span {
-    background: transparent;
-}
-
-#menu-button:checked~.menu-icon span:before {
-    transform: rotate(-45deg);
-}
-
-#menu-button:checked~.menu-icon span:after {
-    transform: rotate(45deg);
-}
-
-#menu-button:checked~.menu-icon:not(.steps) span:before, #menu-button:checked~.menu-icon:not(.steps) span:after {
-    top: 0;
-}
-
-/* Logo */
-
-.logo {
-    display: block;
-    float: left;
-    margin: 10px 0;
-    height: 30px;
+    width: 100%;
+    max-height: max-content;
+    transition: max-height .2s ease-out;
 }
 
 /* Name Typewriter Animation */
@@ -188,7 +176,7 @@ a {
     text-align: center;
     align-items: center;
     margin: auto;
-    margin-top: 50px;
+    padding: 20px 0;
 }
 
 .typewriter h1 {
@@ -196,7 +184,7 @@ a {
     overflow: hidden;
     letter-spacing: 2px;
     white-space: nowrap;
-    font-size: 2.4em;
+    font-size: 35px;
     border-right: 28px solid;
     box-sizing: border-box;
     animation: typing 3s steps(11, end), blink 1s step-end infinite;
@@ -329,6 +317,11 @@ a {
     text-decoration: none;
 }
 
+.return a:hover {
+    color: #ffa2bb;
+    transition: all 0.2s ease-out;
+}
+
 .about .terminal-window .statement .input:before {
     content: ">\A0";
 }
@@ -349,8 +342,8 @@ a {
     padding: 0 30px;
     background-color: #F8F8F8;
     border: 1px solid #EFF2F1;
-    border-radius: 3px;
-    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11), 0 4px 4px rgba(0, 0, 0, 0.11), 0 6px 8px rgba(0, 0, 0, 0.11), 0 8px 16px rgba(0, 0, 0, 0.11);
 }
 
 .project-title {
@@ -405,7 +398,7 @@ a {
 .project-links .live-demo {
     color: #F8F8F8;
     background-color: rgba(64, 32, 64, 0.75);
-    border: 1px solid rgba(64, 32, 64, 0.75);
+    border: 1px solid rgba(64, 32, 64, 0.25);
     box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
 }
 
@@ -480,53 +473,50 @@ a {
         max-width: 1000px;
         text-align: center;
         align-items: center;
-        margin: 0 auto;
+        scroll-behavior: smooth;
     }
     .page-container {
         text-align: center;
         align-items: center;
-        margin: 0 auto;
     }
-    .nav {
+    #nav {
         display: block;
-        position: relative;
-        margin: 0;
-        width: 100%;
-        max-width: 100%;
-        margin: auto;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+        max-width: 1000px;
+        overflow: hidden;
+    }
+    #home-nav-label {
+        display: none;
+    }
+    #menu-icon {
+        display: none;
     }
     .nav-items {
         display: block;
-        position: relative;
-        margin-left: 50px;
+        margin: 0;
+        float: right;
         list-style: none;
         overflow: hidden;
-        float: right;
-        margin: 0;
-        padding: 0;
         max-width: fit-content;
     }
     .nav-items li {
-        float: left;
-        max-height: none;
+        display: block;
+        margin: 0;
+        float: right;
+        list-style: none;
+        overflow: hidden;
     }
     .nav-items li a {
-        margin-left: 40px;
-        padding: 14px;
+        margin: 0 10px;
+        padding: 19px 20px;
         color: #151515;
     }
     .nav-items li a:hover, .nav-items li a:focus {
         color: #92374e;
         transition: all 0.2s ease-out;
-    }
-    .menu-icon {
-        display: none;
-    }
-    #home-label {
-        display: none;
-    }
-    .typewriter {
-        margin-top: 40px;
     }
     .typewriter h1 {
         font-size: 3.2em;

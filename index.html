@@ -41,26 +41,23 @@
 </head>
 
 <body>
-    <div class="page">
+    <div class="nav" id="nav">
+        <a href="/"><img src="img/logo.svg" class="logo" alt="AW logo"></a>
+        <div id="menu-icon" class="menu-icon">
+            <span></span>
+        </div>
+        <ul class="nav-items" id="nav-items">
+            <li class="item" id="home-nav-label"><a href="#home">Home</a></li>
+            <li class="item"><a href="#projects">Projects</a></li>
+            <li class="item"><a href="#photos">Photos</a></li>
+            <li class="item"><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+    <div class="page" id="home">
         <div class="page-container">
-            <div class="nav" id="home">
-                <a href="/"><img src="img/logo.svg" class="logo" alt="AW logo"></a>
-                <input type="checkbox" id="menu-button" />
-                <label class="menu-icon" for="menu-button">
-                    <span></span>
-                </label>
-                <ul class="nav-items">
-                    <li id="home-label"><a href="#home">Home</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#photos">Photos</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-
             <div class="typewriter">
                 <h1><a href="/">> Annie Wu</a></h1>
             </div>
-
             <div class="short-bio">
                 <p>Hello! I am a developer and photographer.</p>
                 <p>Check out my <a href="#projects">projects</a> and <a href="#photos">photography</a> portfolio.</p>
@@ -97,19 +94,23 @@
                         <p class="return">[git, java, python, html, css, windows os, computer hardware]</p>
                     </div>
                     <div class="statement">
+                        <p class="input">annie.socials</p>
+                        <p class="return">[<a href="https://www.linkedin.com/in/anniewu2303/">linkedin</a>,
+                            <a href="https://github.com/anniewu2303/">github</a>,
+                            <a href="https://twitter.com/anniedotexe/">twitter</a>,
+                            <a href="https://www.instagram.com/anniedotexe/">instagram</a>,
+                            <a href="https://www.twitch.tv/anniedotexe/">twitch</a>,
+                            <a href="https://www.youtube.com/channel/UCzPBm9UFj59Y0UukU1KVWaw">youtube</a>,
+                            <a href="https://www.flickr.com/people/anniewuphotos/">flickr</a>]
+                        </p>
+                    </div>
+                    <div class="statement">
                         <p class="input">annie.languages</p>
                         <p class="return">[english, cantonese]</p>
                     </div>
                     <div class="statement">
                         <p class="input">annie.interests</p>
                         <p class="return">[photography, vibing to music, video games, building PCs, mechanical keebs]
-                        </p>
-                    </div>
-                    <div class="statement">
-                        <p class="input">annie.otherSocials</p>
-                        <p class="return">[<a href="https://www.twitch.tv/anniedotexe/">twitch</a>,
-                            <a href="https://www.youtube.com/channel/UCzPBm9UFj59Y0UukU1KVWaw">youtube</a>,
-                            <a href="https://www.flickr.com/people/anniewuphotos/">flickr</a>]
                         </p>
                     </div>
                     <div class="statement" id="bottom">
@@ -413,10 +414,12 @@
             <div class="section-title" id="contact">
                 <h2>> Contact Me</h2>
                 <div class="social-links">
-                    <a href="https://www.linkedin.com/in/anniewu2303/" class="fab fa-linkedin button" aria-label="LinkedIn"></a>
+                    <a href="https://www.linkedin.com/in/anniewu2303/" class="fab fa-linkedin button"
+                        aria-label="LinkedIn"></a>
                     <a href="https://github.com/anniewu2303/" class="fab fa-github button" aria-label="GitHub"></a>
-                    <a href="https://www.instagram.com/anniedotexe/" class="fab fa-instagram button" aria-label="Instagram"></a>
                     <a href="https://twitter.com/anniedotexe/" class="fab fa-twitter button" aria-label="Twitter"></a>
+                    <a href="https://www.instagram.com/anniedotexe/" class="fab fa-instagram button"
+                        aria-label="Instagram"></a>
                 </div>
             </div>
 
@@ -425,6 +428,8 @@
             </footer>
         </div>
     </div>
+
+    <script src="./js/main.js"></script>
 </body>
 
 </html>

@@ -1,6 +1,0 @@
-# Remove html file extension https://example.com/page.html to https://example.com/page 
-
-RewriteEngine on 
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME}\.html -f
-RewriteRule ^(.*)$ $1.html [NC,L]
