@@ -505,7 +505,7 @@ a {
     .nav-items li {
         display: block;
         margin: 0;
-        float: right;
+        float: left;
         list-style: none;
         overflow: hidden;
     }

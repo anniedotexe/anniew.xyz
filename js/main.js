@@ -15,17 +15,19 @@ window.onscroll = function () {
 var menuIcon = document.getElementById("menu-icon");
 var navItems = document.getElementById("nav-items");
 
-// Toggle nav menu button
-menuIcon.addEventListener('click', function () {
-    navItems.classList.toggle("show");
-})
-
-// Toggle to close menu if user clicks a link or anywhere else
-document.addEventListener("click", function (event) {
-    if ((navItems.classList.contains("show")) && (event.target != menuIcon)) {
+if (window.innerWidth <= 768) {
+    // Toggle nav menu button
+    menuIcon.addEventListener('click', function () {
         navItems.classList.toggle("show");
-    }
-});
+    })
+
+    // Toggle to close menu if user clicks a link or anywhere else
+    document.addEventListener("click", function (event) {
+        if ((navItems.classList.contains("show")) && (event.target != menuIcon)) {
+            navItems.classList.toggle("show");
+        }
+    });
+}
 
 // Always show nav items on wide screen
 if (window.innerWidth > 768) {
