@@ -1,7 +1,9 @@
-// Show/Hide nav bar on scroll
-
 var previousScrollPosition = window.pageYOffset;
 var nav = document.getElementById("nav");
+var menuIcon = document.getElementById("menu-icon");
+var navItems = document.getElementById("nav-items");
+
+// Show/Hide nav bar on scroll
 window.onscroll = function () {
     var currentScrollPosition = window.pageYOffset;
     if (previousScrollPosition > currentScrollPosition) {
@@ -12,9 +14,6 @@ window.onscroll = function () {
     }
     previousScrollPosition = currentScrollPosition;
 }
-
-var menuIcon = document.getElementById("menu-icon");
-var navItems = document.getElementById("nav-items");
 
 if (window.innerWidth <= 768) {
     // Toggle nav menu button
@@ -34,5 +33,15 @@ if (window.innerWidth <= 768) {
 if (window.innerWidth > 768) {
     if (!navItems.classList.contains("show")) {
         navItems.classList.add("show");
+    }
+}
+
+// Page load / reload to top of page
+if (history.scrollRestoration) {
+    history.scrollRestoration = 'manual';
+}
+else {
+    window.onbeforeunload = function () {
+        window.scrollTo(0, 0);
     }
 }
