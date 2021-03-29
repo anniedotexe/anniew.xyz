@@ -230,6 +230,24 @@ a {
     transition: all 0.2s ease-out;
 }
 
+/* Social Links */
+
+.social-links {
+    margin: 20px auto;
+}
+
+.social-links a {
+    text-align: center;
+    text-decoration: none;
+}
+
+.social-links a img {
+    padding: 10px;
+    margin: 0 5px;
+    width: auto;
+    height: 50px;
+}
+
 /* Quote Under Section Titles */
 
 .quote {
@@ -431,21 +449,20 @@ a {
 
 /* Contact Me */
 
-.social-links {
+#contact.social-links {
     margin: 30px auto;
 }
 
-.social-links .fab {
-    padding: 5px;
-    margin: 0 10px;
-    font-size: 25px;
+#contact.social-links a {
     text-align: center;
     text-decoration: none;
-    color: #151515;
 }
 
-.social-links .fab:hover, .social-links .fab:focus {
-    color: #92374D;
+#contact.social-links a img {
+    padding: 10px;
+    margin: 0 5px;
+    width: 50px;
+    height: 50px;
 }
 
 /* Footer */
