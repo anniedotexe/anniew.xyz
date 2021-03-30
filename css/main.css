@@ -88,7 +88,6 @@ a {
 }
 
 .nav-items li {
-    position: relative;
     color: #EFF2F1;
     background-color: #EFF2F1;
     margin: 0 auto;
@@ -124,7 +123,6 @@ a {
     cursor: pointer;
     float: right;
     padding: 28px 20px;
-    position: relative;
     user-select: none;
 }
 
@@ -162,7 +160,6 @@ a {
     overflow: hidden;
     width: 100%;
     max-height: max-content;
-    transition: max-height .2s ease-out;
 }
 
 /* Name Typewriter Animation */
@@ -233,6 +230,7 @@ a {
 /* Social Links */
 
 .social-links {
+    display: block;
     margin: 20px auto;
 }
 
@@ -242,10 +240,10 @@ a {
 }
 
 .social-links a img {
-    padding: 10px;
+    padding: 7px;
     margin: 0 5px;
     width: auto;
-    height: 50px;
+    height: 40px;
 }
 
 /* Quote Under Section Titles */
@@ -270,7 +268,7 @@ a {
     text-align: left;
     font-family: 'Fira Mono', monospace;
     font-weight: 400;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .terminal-header {
@@ -350,7 +348,6 @@ a {
 /* Projects */
 
 .project-card {
-    position: relative;
     display: block;
     margin: 50px auto;
     text-align: left;
@@ -382,7 +379,6 @@ a {
 }
 
 .project-skills {
-    position: relative;
     display: block;
     margin: 10px auto;
 }
@@ -392,12 +388,10 @@ a {
     border-radius: 5px;
     margin: auto 8px 10px auto;
     padding: 5px;
-    position: relative;
     display: inline-block
 }
 
 .project-links {
-    position: relative;
     display: block;
     margin: 10px auto 30px auto;
 }
@@ -407,7 +401,6 @@ a {
     margin: auto 15px 10px auto;
     padding: 8px;
     text-decoration: none;
-    position: relative;
     display: inline-block;
 }
 
@@ -449,26 +442,23 @@ a {
 
 /* Contact Me */
 
-#contact.social-links {
+#contact .social-links {
     margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 70px);
+    justify-content: center;
 }
 
-#contact.social-links a {
-    text-align: center;
-    text-decoration: none;
-}
-
-#contact.social-links a img {
+#contact .social-links a img {
     padding: 10px;
     margin: 0 5px;
-    width: 50px;
+    width: auto;
     height: 50px;
 }
 
 /* Footer */
 
 .copyright {
-    position: relative;
     margin: 100px auto 50px auto;
     font-size: 14px;
     width: 100%;
@@ -538,6 +528,9 @@ a {
     .nav-items li a:hover, .nav-items li a:focus {
         color: #92374e;
         transition: all 0.2s ease-out;
+    }
+    #contact .social-links {
+        display: block;
     }
 }
 
