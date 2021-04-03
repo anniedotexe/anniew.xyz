@@ -25,7 +25,7 @@ This is the source code for my personal website - a developer and photographer p
 
 ### Creator / Maintainer
 
-Annie Wu ([anniewu2303](https://github.com/anniewu2303))
+Annie Wu ([anniedotexe](https://github.com/anniedotexe))
 
 If you have any questions about the code, feel free to contact me anywhere below.
 
