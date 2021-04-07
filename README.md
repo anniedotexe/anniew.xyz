@@ -9,7 +9,7 @@ This is the source code for my personal website - a developer and photographer p
 </p>
 
 <p align="center">
-  <a href="http://anniew.xyz"><img src="./img/social-preview.png" alt="top of the landing page"></a>
+  <a href="http://anniew.xyz"><img src="./img/preview.gif" alt="top of the landing page"></a>
 </p>
 
 ### Built With
