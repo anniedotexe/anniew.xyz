@@ -21,6 +21,9 @@ This is the source code for my personal website - a developer and photographer p
 - :blue_heart: [Google Domains](https://domains.google/) for the cool domain
 - :purple_heart: [Netlify](https://www.netlify.com/) for hosting
 
+Here is my [dev.to blog post](https://dev.to/anniedotexe/finally-created-my-personal-website-2n6p) about the process of creating this website.
+
+
 ---
 
 ### Creator / Maintainer
