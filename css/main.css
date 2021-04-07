@@ -223,7 +223,7 @@ a {
 }
 
 .short-bio p a:hover {
-    color: #92374D;
+    color: #BC4E69;
     transition: all 0.2s ease-out;
 }
 
@@ -258,7 +258,7 @@ a {
 }
 
 .quote a:hover {
-    color: #92374D;
+    color: #BC4E69;
     transition: all 0.2s ease-out;
 }
 
@@ -374,7 +374,7 @@ a {
 }
 
 .project-description a:hover {
-    color: #92374D;
+    color: #BC4E69;
     transition: all 0.2s ease-out;
 }
 
@@ -447,7 +447,7 @@ a {
 }
 
 .more-info a:hover {
-    color: #92374D;
+    color: #BC4E69;
 }
 
 /* Contact Me */
@@ -536,7 +536,7 @@ a {
         color: #151515;
     }
     .nav-items li a:hover, .nav-items li a:focus {
-        color: #92374D;
+        color: #BC4E69;
         transition: all 0.2s ease-out;
     }
     #contact .social-links {
