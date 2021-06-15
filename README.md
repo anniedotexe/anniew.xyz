@@ -5,6 +5,7 @@ This is the source code for my personal website - a developer and photographer p
 <p align="center">
     <img alt="HTML5" src="https://img.shields.io/badge/-HTML5-E44D26?style=flat&logo=html5&logoColor=white"/>
     <img alt="CSS3" src="https://img.shields.io/badge/-CSS3-2965f1?style=flat&logo=css3&logoColor=white"/>
+    <img alt="JavaScript" src="https://img.shields.io/badge/-JavaScript-F0DB4F?style=flat&logo=javascript&logoColor=white"/>
     <img alt="Netlify Status" src="https://api.netlify.com/api/v1/badges/a97a8c74-04cc-4b59-b7b9-71d2800ca95f/deploy-status"/>
 </p>
 
@@ -14,12 +15,13 @@ This is the source code for my personal website - a developer and photographer p
 
 ### Built With
 
-- :blue_heart: [HTML5](https://www.w3schools.com/html/)
-- :purple_heart: [CSS3](https://www.w3schools.com/css/)
-- :blue_heart: [Font Awesome](https://fontawesome.com/) for the icons
-- :purple_heart: [CSS-Tricks](https://css-tricks.com/snippets/css/typewriter-effect/) for the typewriter animation
-- :blue_heart: [Google Domains](https://domains.google/) for the cool domain
-- :purple_heart: [Netlify](https://www.netlify.com/) for hosting
+- 💙 [HTML5](https://www.w3schools.com/html/)
+- 💜 [CSS3](https://www.w3schools.com/css/)
+- 💙 [JavaScript](https://www.w3schools.com/js/DEFAULT.asp)
+- 💜 [Font Awesome](https://fontawesome.com/) for the icons
+- 💙 [CSS-Tricks](https://css-tricks.com/snippets/css/typewriter-effect/) for the typewriter animation
+- 💜 [Google Domains](https://domains.google/) for the cool domain
+- 💙 [Netlify](https://www.netlify.com/) for hosting
 
 Here is my [dev.to blog post](https://dev.to/anniedotexe/finally-created-my-personal-website-2n6p) about the process of creating this website.
 
