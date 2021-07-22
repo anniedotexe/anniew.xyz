@@ -1,553 +1,342 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <title>Annie Wu</title>
+    <head>
+        <title>Annie Wu</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
 
-    <meta charset="UTF-8">
-    <meta property="og:title" content="Annie Wu" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="http://anniew.xyz" />
-    <meta property="og:site_name" content="Annie Wu" />
-    <meta property="og:description" content="Photographer and Developer based in Los Angeles, California" />
-    <meta property="og:locale" content="en_US" />
-    <meta name="twitter:title" content="Annie Wu">
-    <meta name="twitter:url" content="http://anniew.xyz" />
-    <meta name="twitter:description" content="Photographer and Developer based in Los Angeles, California">
-    <meta name="twitter:card" content="summary">
+        <meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Annie Wu, anniewu2303@gmail.com">
-    <meta name="copyright" content="Annie Wu">
-    <meta name="description" content="Photographer and Developer based in Los Angeles, California">
-    <meta name="keywords"
-        content="Annie Wu, Annie Wu Portfolio, Annie Wu Photography, photographer, developer, java, python">
+        <meta property="og:title" content="Annie Wu" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="http://anniew.xyz" />
+        <meta property="og:description"
+            content="Hi! I'm Annie. Welcome to my portfolio. I am a developer, photographer, and mother of a bear puppy named Coconut based in Los Angeles, California." />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:image" content="./img/readme/screenshot.png" />
 
-    <link rel="canonical" href="https://anniew.xyz" />
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="Annie Wu">
+        <meta name="twitter:description"
+            content="Welcome to my portfolio. I am a developer, photographer, and mother of a bear puppy named Coconut based in Los Angeles, California.">
+        <meta name="twitter:image" content="./img/readme/screenshot.png">
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Noto+Sans|Fira+Mono&display=swap" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans|Fira+Mono&display=swap" media="print"
-        onload="this.media='all'" />
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Fira+Mono&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Annie Wu, anniewu2303@gmail.com">
+        <meta name="copyright" content="Annie Wu">
+        <meta name="description"
+            content="Welcome to my portfolio. I am a developer, photographer, and mother of a bear puppy named Coconut based in Los Angeles, California.">
+        <meta name="keywords"
+            content="Annie Wu, Annie Wu Portfolio, Annie Wu Photography, photographer, developer, java, python, html, css, javascript, web developer, webdev, portfolio">
 
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" rel="stylesheet">
+        <link rel="canonical" href="https://anniew.xyz" />
 
-    <link href="css/main.css" rel="stylesheet" type="text/css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:700|Nunito"
+            rel="stylesheet">
 
-    <noscript>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans|Fira+Mono&display=swap" />
-    </noscript>
-</head>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+            integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-<body>
-    <div class="nav" id="nav">
-        <div class="navbar">
-            <a href="/"><img src="img/logo.svg" class="logo" alt="AW logo"></a>
-            <div id="menu-icon" class="menu-icon">
-                <span></span>
-            </div>
-            <ul class="nav-items" id="nav-items">
-                <li class="item" id="home-nav-label"><a href="#home">Home</a></li>
-                <li class="item"><a href="#projects">Projects</a></li>
-                <li class="item"><a href="#photos">Photos</a></li>
-                <li class="item"><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </div>
-    <div class="page" id="home">
-        <div class="page-container">
-            <div class="typewriter">
-                <h1><a href="/">> Annie Wu</a></h1>
-            </div>
-            <div class="short-bio">
-                <p>Hi there! I am a developer and photographer.</p>
-                <p>Check out my <a href="#projects">projects</a> and <a href="#photos">photography</a> portfolio.</p>
-            </div>
+        <link rel="stylesheet" href="./css/main.css" type="text/css">
+        <link rel="stylesheet" href="./css/header.css" type="text/css">
+        <link rel="stylesheet" href="./css/home.css" type="text/css">
+        <link rel="stylesheet" href="./css/projects.css" type="text/css">
+        <link rel="stylesheet" href="./css/footer.css" type="text/css">
+    </head>
 
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/anniewu2303/" aria-label="LinkedIn">
-                    <img src="./img/linkedin.svg" class="socials button" alt="LinkedIn Profile">
-                </a>
-                <a href="https://github.com/anniedotexe/" aria-label="GitHub">
-                    <img src="./img/github.svg" class="socials button" alt="GitHub Profile">
-                </a>
-                <a href="https://dev.to/anniedotexe" aria-label="dev.to">
-                    <img src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg" class="socials button"
-                        alt="DEV Community Profile">
-                </a>
-            </div>
+    <body>
+        <header class="header">
+            <a href="/" class="header-logo">@anniedotexe</a>
+            <nav class="nav">
+                <div class="toggle"><i class="fas fa-bars"></i></div>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="/about">About</a></li>
+                    <li class="nav-item"><a href="/projects">Projects</a></li>
+                    <li class="nav-item"><a href="/photos">Photos</a></li>
+                    <li class="nav-item"><a href="/blog">Blog</a></li>
+                </ul>
+            </nav>
+        </header>
 
-            <div class="about">
-                <div class="terminal-header">
-                    <div class="title">annie.exe</div>
-                    <div class="right-side-buttons">
-                        <div class="fas fa-window-minimize"></div>
-                        <div class="fas fa-window-restore"></div>
-                        <div class="fas fa-window-close"></div>
+        <main class="main-container home-section">
+            <section id="home">
+                <div class="landing-page-details">
+                    <h1 class="small-title">Hi, my name is</h1>
+                    <h2 class="big-title my-name pink">Annie Wu</h2>
+                    <h3 class="big-title">I am a Developer & Photographer</h3>
+                    <div class="short-bio">
+                        <img src="./img/hello.svg" alt="Hello">
+                        <p>Welcome to my portfolio. I am a developer, photographer, and
+                            mother of a bear
+                            puppy named Coconut
+                            based in Los Angeles, California.</p>
                     </div>
-                </div>
-                <div class="terminal-window">
-                    <div class="statement" id="top">
-                        <p class="input">annie.location</p>
-                        <p class="return">los angeles, california</p>
-                    </div>
-                    <div class="statement">
-                        <p class="input">annie.education</p>
-                        <p class="return">b.s. in computer science - cal poly pomona</p>
-                    </div>
-                    <div class="statement">
-                        <p class="input">annie.contact</p>
-                        <p class="return"><a
-                                href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#97;&#110;&#110;&#105;&#101;&#119;&#117;&#50;&#51;&#48;&#51;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#97;&#110;&#110;&#105;&#101;&#119;&#117;&#50;&#51;&#48;&#51;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a>
-                        </p>
-                    </div>
-                    <div class="statement">
-                        <p class="input">annie.resume</p>
-                        <p class="return"><a href="./anniewu-resume.pdf">anniewu.pdf</a></p>
-                    </div>
-                    <div class="statement">
-                        <p class="input">annie.skills</p>
-                        <p class="return">[git, java, python, html, css, figma, windows os, computer hardware]</p>
-                    </div>
-                    <div class="statement">
-                        <p class="input">annie.socials</p>
-                        <p class="return"><a href="https://linktr.ee/anniedotexe">linktree</a>
-                        </p>
-                    </div>
-                    <div class="statement">
-                        <p class="input">annie.languages</p>
-                        <p class="return">[english, cantonese]</p>
-                    </div>
-                    <div class="statement">
-                        <p class="input">annie.interests</p>
-                        <p class="return">[photography, vibing to music, video games, building PCs, mechanical keebs, boba]
-                        </p>
-                    </div>
-                    <div class="statement" id="bottom">
-                        <p class="input"><span>&nbsp;</span></p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="section-title" id="projects">
-                <h2>> Projects</h2>
-                <p class="quote">"It’s not a bug – it’s an undocumented feature." - Anonymous</p>
-                <div class="project-card">
-                    <h3 class="project-title">anniew.xyz</h3>
-                    <p class="project-description">It's this site you are currently visiting!! This is my developer
-                        and photographer portfolio. It is a responsive website with a little bit of text animation.
-                        This project was also created for HTML, CSS, and JS learning purposes.<br><br>
-                        <em>The GitHub repository currently has been starred at least 10 times and forked at least 4
-                            times.</em>
-                    </p>
-                    <div class="project-skills">
-                        <span class="project-skill">HTML5</span>
-                        <span class="project-skill">CSS3</span>
-                        <span class="project-skill">JavaScript</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/anniedotexe/anniew.xyz" class="link button">
-                            <i class="fab fa-github"></i> Source</a>
-                        <a href="https://dev.to/anniedotexe/finally-created-my-personal-website-2n6p"
-                            class="link button">
-                            <i class="fab fa-dev"></i> Blog Post
+                    <div class="cta-container email-container">
+                        <a href="mailto:anniewu2303@gmail.com" class="cta email-button">
+                            <img src="./img/email.svg" alt="Email Icon">
+                            <span>Say Hello</span>
                         </a>
                     </div>
                 </div>
-                <div class="project-card">
-                    <h3 class="project-title">Comfy Coffee</h3>
-                    <p class="project-description">
-                        This is the landing page for a fictitious coffee shop called "Comfy Coffee" based on Starbuck's
-                        website design written in HTML and CSS. This was created just for fun to practice my web development and design skills.
-                    <div class="project-skills">
-                        <span class="project-skill">HTML5</span>
-                        <span class="project-skill">CSS3</span>
+                <div class="landing-page-socials">
+                    <ul>
+                        <li class="social-link">
+                            <a href="https://github.com/anniedotexe" aria-label="GitHub"
+                                target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </li>
+                        <li class="social-link">
+                            <a href="https://www.linkedin.com/in/anniewu2303/" aria-label="LinkedIn"
+                                target="_blank">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                        <li class="social-link">
+                            <a href="https://twitter.com/anniedotexe" aria-label="Twitter"
+                                target="_blank">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="social-link">
+                            <a href="https://www.instagram.com/anniedotexe/" aria-label="Instagram"
+                                target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="projects" id="select-projects">
+                <h2>Select Projects</h2>
+                <p class="section-description">
+                    Here are some of the projects I have worked on.<br>
+                    You can find more on <a class="hyperlink"
+                        href="https://github.com/anniedotexe">GitHub</a>.
+                </p>
+                <div class="project-cards-container">
+                    <div class="card">
+                        <img src="./img/project-preview/comfy-coffee-preview.png"
+                            alt="Project Preview Screenshot" class="card-preview-img">
+                        <div class="card-info">
+                            <div class="title-and-links">
+                                <span class="project-title">
+                                    Comfy Coffee
+                                </span>
+                                <div class="project-links">
+                                    <a href="https://comfy-coffee.anniew.xyz/">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="https://github.com/anniedotexe/comfy-coffee">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="project-skills">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                            </div>
+                            <p class="project-description">
+                                This is the landing page for a fictitious coffee shop called "Comfy
+                                Coffee" based on Starbucks'
+                                website design.
+                            </p>
+                        </div>
                     </div>
-                    <div class="project-links">
-                        <a href="https://comfy-coffee.anniew.xyz/" class="live-demo button">Live Demo
-                            <i class="fas fa-external-link-alt"></i>
-                        </a>
-                        <a href="https://github.com/anniedotexe/comfy-coffee" class="link button">
-                            <i class="fab fa-github"></i> Open Source
-                        </a>
+                    <div class="card">
+                        <img src="./img/project-preview/twitcord-preview.png"
+                            alt="Project Preview Screenshot" class="card-preview-img">
+                        <div class="card-info">
+                            <div class="title-and-links">
+                                <span class="project-title">
+                                    Twitcord
+                                </span>
+                                <div class="project-links">
+                                    <a href="https://twitcord.anniew.xyz/">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="https://github.com/anniedotexe/twitcord">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="project-skills">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <p class="project-description">
+                                A mobile UI concept of "If Twitter was owned by Discord." It was
+                                inspired by this <a
+                                    href="https://www.reddit.com/r/discordapp/comments/lxjoe1/if_twitter_were_owned_by_discord/"
+                                    class="hyperlink">concept art</a> on Reddit. You can
+                                change the nav tabs and toggle on the reaction buttons.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./img/project-preview/rnn-twitter-bot-preview.png"
+                            alt="Project Preview Screenshot" class="card-preview-img">
+                        <div class="card-info">
+                            <div class="title-and-links">
+                                <span class="project-title">
+                                    RNN Twitter Bot
+                                </span>
+                                <div class="project-links">
+                                    <a href="https://twitter.com/dickinson_rnn">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="https://github.com/anniedotexe/RNN-Twitter-Bot">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="project-skills">
+                                <span>Python</span>
+                                <span>GCP</span>
+                            </div>
+                            <p class="project-description">
+                                This is a recurrent neural network Twitter bot written in Python
+                                with Tweepy. It was trained to generate text with Emily Dickinson
+                                poems. This will tweet newly generated text from the trained model
+                                every hour to the <a class="hyperlink"
+                                    href="https://twitter.com/dickinson_rnn">@dickinson_rnn</a>
+                                Twitter account.<br><br>
+                                It was originally deployed on a Google
+                                Cloud Platform virtual machine
+                                instance. However, the free
+                                trial period ended, so it is now scheduled to run locally on PC
+                                startup.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./img/project-preview/tic-tac-toe-preview.png"
+                            alt="Project Preview Screenshot" class="card-preview-img">
+                        <div class="card-info">
+                            <div class="title-and-links">
+                                <span class="project-title">
+                                    Simple TIC-TAC-TOE Game
+                                </span>
+                                <div class="project-links">
+                                    <a href="https://tic-tac-toe.anniew.xyz/">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="https://github.com/anniedotexe/tic-tac-toe">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="project-skills">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <p class="project-description">
+                                This is a fully responsive simple tic-tac-toe game written in HTML,
+                                CSS, and JavaScript.
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <div class="project-card">
-                    <h3 class="project-title">An Optometry Practice's Website Redesign</h3>
-                    <p class="project-description">
-                        This is a redesign of <a href="http://www.drkatiechuoptometry.com/">my optometrist's website</a>
-                        to be responsive and have a modern minimalistic design (and look less early 2000's). This was
-                        created just for fun to practice my web development and design skills. <br><br>
-                        <b><em>I am not associated with nor speak for this optometry practice. </em></b>
-
-                    <div class="project-skills">
-                        <span class="project-skill">HTML5</span>
-                        <span class="project-skill">CSS3</span>
-                        <span class="project-skill">JavaScript</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://optometrist.anniew.xyz/" class="live-demo button">Live Demo
-                            <i class="fas fa-external-link-alt"></i>
-                        </a>
-                        <a href="https://github.com/anniedotexe/optometrist-website-redesign" class="link button">
-                            <i class="fab fa-github"></i> Open Source
-                        </a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <h3 class="project-title">Twitcord - UI Design</h3>
-                    <p class="project-description">
-                        This project was inspired by <a
-                            href="https://www.reddit.com/r/discordapp/comments/lxjoe1/if_twitter_were_owned_by_discord/">this
-                            concept art</a> on reddit regarding "if Twitter were owned by Discord". I decided to make a
-                        pure HTML, CSS, JavaScript version of this idea. Users can interact with the reactions, follow
-                        button, and tweets navigation bar. This project was also created for HTML, CSS, and JS learning
-                        purposes.
-                    <div class="project-skills">
-                        <span class="project-skill">HTML5</span>
-                        <span class="project-skill">CSS3</span>
-                        <span class="project-skill">JavaScript</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://twitcord.anniew.xyz/" class="live-demo button">Live Demo
-                            <i class="fas fa-external-link-alt"></i>
-                        </a>
-                        <a href="https://github.com/anniedotexe/twitcord" class="link button">
-                            <i class="fab fa-github"></i> Open Source
-                        </a>
-                        <a href="https://dev.to/anniedotexe/twitter-discord-interactive-mobile-ui-concept-3d4"
-                            class="link button">
-                            <i class="fab fa-dev"></i> Blog Post
-                        </a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <h3 class="project-title">Simple Music Player - UI Design</h3>
-                    <p class="project-description">
-                        This is a minimal and simple music player UI design made with pure HTML, CSS, and JavaScript.
-                        Users can click on buttons for changing color when they are active, such as liking the song,
-                        repeat, and shuffle. This project was also created for HTML, CSS, and JS learning
-                        purposes.<br><br>
-                        <em>The GitHub repository currently has been starred at least 12 times and forked at least 1 time.</em>
-                    <div class="project-skills">
-                        <span class="project-skill">HTML5</span>
-                        <span class="project-skill">CSS3</span>
-                        <span class="project-skill">JavaScript</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://musicplayer.anniew.xyz/" class="live-demo button">Live Demo
-                            <i class="fas fa-external-link-alt"></i>
-                        </a>
-                        <a href="https://github.com/anniedotexe/music-player" class="link button">
-                            <i class="fab fa-github"></i> Open Source
-                        </a>
-                        <a href="https://dev.to/anniedotexe/simple-music-player-ui-4nn1" class="link button">
-                            <i class="fab fa-dev"></i> Blog Post
-                        </a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <h3 class="project-title">RNN Twitter Bot</h3>
-                    <p class="project-description">This is a <a
-                            href="https://towardsdatascience.com/illustrated-guide-to-recurrent-neural-networks-79e5eb8049c9">
-                            recurrent neural network</a> Twitter bot written in Python with <a
-                            href="https://github.com/tweepy/tweepy">Tweepy</a>. This will tweet newly generated
-                        text from the trained model every hour to a Twitter Account. Find yourself some text to train
-                        the model with <a href="https://github.com/minimaxir/textgenrnn">textgenrnn</a> and follow the
-                        <a href="https://github.com/anniedotexe/RNN-Twitter-Bot#getting-started">ReadMe</a> to create
-                        your own recurrent neural network Twitter bot.<br><br>
-                        My <a href="https://twitter.com/dickinson_rnn">@dickinson_rnn</a> Twitter bot generates text
-                        with a temperature of 0.7 and a loss of 0.1894. It was originally deployed on a Google Cloud
-                        Platform virtual machine instance. However, the free trial period ended, so it is now scheduled
-                        to run locally on PC login.<br><br>
-                        <em>The GitHub repository currently has been starred at least 3 times.</em>
-                    </p>
-                    <div class="project-skills">
-                        <span class="project-skill">Python3</span>
-                        <span class="project-skill">GCP</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://twitter.com/dickinson_rnn" class="live-demo button">Live Demo
-                            <i class="fas fa-external-link-alt"></i>
-                        </a>
-                        <a href="https://github.com/anniedotexe/RNN-Twitter-Bot" class="link button">
-                            <i class="fab fa-github"></i> Open Source
-                        </a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <h3 class="project-title">Instagram Like & Comment Bot</h3>
-                    <p class="project-description">This Instagram script automates the process of going through
-                        hashtag(s) and liking and/or commenting on the posts on a Google Chrome browser. Want to grow
-                        your community and following without the negative implications of an actual bot? Customize the
-                        list of randomly chosen comments to your liking, and no one will even notice that it is not
-                        actually you commenting on their posts.<br><br>
-                        <em>The GitHub repository currently has been starred at least 14 times and forked at least 5
-                            times.</em>
-                    </p>
-                    <div class="project-skills">
-                        <span class="project-skill">Python3</span>
-                        <span class="project-skill">Selenium WebDriver</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/anniedotexe/Instagram-Like-Comment-Bot#Demo"
-                            class="live-demo button button">
-                            Live Demo <i class="fas fa-external-link-alt"></i>
-                        </a>
-                        <a href="https://github.com/anniedotexe/Instagram-Like-Comment-Bot" class="link button button">
-                            <i class="fab fa-github"></i> Open Source
-                        </a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <h3 class="project-title">Twitter Like & Retweet Bot</h3>
-                    <p class="project-description">This is a Twitter bot written in Python with
-                        <a href="https://github.com/tweepy/tweepy">Tweepy</a>. Run this script to automate liking and/or
-                        retweeting tweets that contain single or multiple keywords and hashtags. You can customize the
-                        search keywords, whether you want to get recent or popular results, and if you want the bot to
-                        run continuously or not.<br><br>
-                        My <a href="https://twitter.com/ac_celeste_bot">@ac_celeste_bot</a> Twitter bot likes and
-                        retweets anything about "Animal Crossing Celeste". <em>I did not realize that there is also a
-                            game called Celeste, so the bot also retweets any tweets talking about both of these
-                            games.</em> It was originally deployed on an Amazon Web Services Elastic Compute Cloud
-                        instance. However, the free trial period ended, so it is now hosted on PythonAnywhere.<br><br>
-                        <em>The GitHub repository currently has been starred at least 4 times and forked at least 1
-                            time.</em>
-                    </p>
-                    <div class="project-skills">
-                        <span class="project-skill">Python3</span>
-                        <span class="project-skill">AWS</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://twitter.com/ac_celeste_bot" class="live-demo button">
-                            Live Demo <i class="fas fa-external-link-alt"></i></a>
-                        <a href="https://github.com/anniedotexe/Twitter-Retweet-Bot" class="link button">
-                            <i class="fab fa-github"></i> Open Source</a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <h3 class="project-title">CPP Events Calendar App</h3>
-                    <p class="project-description">This is a web application using a Spring Boot backend and ReactJS
-                        frontend deployed on an Amazon Web Services Elastic Compute Cloud instance that aggregates Cal
-                        Poly Pomona campus events for simple viewing and creates sharable calendar links. I constructed
-                        data access objects, service layers, and rest controllers for users, events, and calendars, and
-                        I implemented REST API operations to manipulate and retrieve user, event, and calendar data as
-                        JSON objects in a MongoDB database.<br><br>
-                        This project was created by a team of 5 for our Software Engineering course.
-                        The idea for this web app came about because our university's campus events were all spread out
-                        on different pages, such as the main site, career center, ASI, and by each college. We wanted to
-                        webscrape all the events and put it in one place. We also wanted to include the option of adding
-                        campus events or personally created events to a calendar that can be shared with others via
-                        links.<br><br>
-                        <em>We have decided to not continue with this project and it is not live anymore. However, you
-                            can still take a look at our code repository.</em>
-                    </p>
-                    <div class="project-skills">
-                        <span class="project-skill">Java</span>
-                        <span class="project-skill">Spring Boot</span>
-                        <span class="project-skill">Maven</span>
-                        <span class="project-skill">MongoDB</span>
-                        <span class="project-skill">AWS</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/Oops-404/Cs4800-Oops-404" class="link button">
-                            <i class="fab fa-github"></i> Source</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="section-title" id="photos">
-                <h2><i class="fas fa-camera-retro"></i> Photos</h2>
-                <p class="quote">“Photography is the story I fail to put into words.” – <a
-                        href="https://www.instagram.com/destinsparks/">Destin Sparks</a></p>
-                <div class="masonry-layout">
-                    <div class="brick">
-                        <img src="https://live.staticflickr.com/65535/48904657791_0eb41b6637_b.jpg"
-                            alt="Kitty hiding behind plant branches" title="Kitty">
-                    </div>
-                    <div class="brick">
-                        <img src="https://live.staticflickr.com/65535/48887909508_ecfa8ca997_b.jpg"
-                            alt="35mm film photo - LOVE letters sign in a Las Vegas hotel" title="35mm - L.O.V.E.">
-                    </div>
-                    <div class="brick">
-                        <img src="https://live.staticflickr.com/65535/49377353001_fd7ffcc596_b.jpg"
-                            alt="A building in Pasadena, CA" title="Pasadena Building">
-                    </div>
-                    <div class="brick">
-                        <img src="https://live.staticflickr.com/1963/45605882391_608f6b0c2e_b.jpg"
-                            alt="Goose with the Seattle skyline in the background" title="Honk">
-                    </div>
-                    <div class="brick">
-                        <img src="https://live.staticflickr.com/1953/44691939805_2c308ea5d7_b.jpg"
-                            alt="San Diego Safari landscape" title="San Diego Safari">
-                    </div>
-                    <div class="brick">
-                        <img src="https://live.staticflickr.com/65535/47850008771_69ee3d5e16_b.jpg"
-                            alt="Hermann Park Lake in Houston, Texas with birds flying" title="Hermann Park Lake">
-                    </div>
-                    <div class="brick">
-                        <img src="https://live.staticflickr.com/1974/44691932235_7a97da7d3f_b.jpg"
-                            alt="Leaves in the sun" title="Leaves">
-                    </div>
-                    <div class="brick">
-                        <img src="https://live.staticflickr.com/65535/47850007431_223df9dfd3_b.jpg"
-                            alt="Kitty with squinting eyes" title="Kitty">
-                    </div>
-                    <div class="brick">
-                        <img src="https://live.staticflickr.com/1902/45605875431_c73e0fa3d7_b.jpg" alt="At the beach"
-                            title="At the Beach">
-                    </div>
-                    <div class="brick">
-                        <img src="https://live.staticflickr.com/1917/30664843797_89da7a353f_b.jpg"
-                            alt="Multidirectional cross paths in Pasadena, CA" title="Where Do I Cross">
-                    </div>
-                    <div class="brick">
-                        <img src="https://live.staticflickr.com/1916/44691936095_fd7de3579c_b.jpg"
-                            alt="Snoqualmie Waterfall in Seattle, WA" title="Waterfall">
-                    </div>
-
-                    <div class="brick">
-                        <img src="https://live.staticflickr.com/65535/48887909523_6b2fac404b_b.jpg"
-                            alt="35mm film photo - On the road to Las Vegas" title="35mm - On the Road to Las Vegas">
-                    </div>
-                    <div class="brick">
-                        <img src="https://live.staticflickr.com/1933/44691942895_8ab68a7200_b.jpg"
-                            alt="San Diego sunset at the beach" title="San Diego Sunset">
-                    </div>
-                    <div class="brick">
-                        <img src="https://live.staticflickr.com/1933/30664857307_864594747c_b.jpg"
-                            alt="Blue ocean and sky with fluffy clouds" title="Blue and Fluffy">
-                    </div>
-                    <div class="brick">
-                        <img src="https://live.staticflickr.com/1902/45605875431_c73e0fa3d7_b.jpg" alt="At the beach"
-                            title="At the Beach">
-                    </div>
-                    <div class="brick">
-                        <img src="https://live.staticflickr.com/1929/44691937385_b46543f79d_b.jpg" alt="Buildings"
-                            title="Buildings">
-                    </div>
-                    <div class="brick">
-                        <img src="https://live.staticflickr.com/1958/45555310682_6a3a92eec0_b.jpg"
-                            alt="Walking path at the beach" title="Beach Walk">
-                    </div>
-                    <div class="brick">
-                        <img src="https://live.staticflickr.com/65535/50775827653_fe8545f7bb_b.jpg"
-                            alt="35mm film photo - Car side mirror selfie" title="35mm - Car Side Mirror Selfie">
-                    </div>
-                    <div class="brick">
-                        <img src="https://live.staticflickr.com/1969/44880411914_a233fb64d6_b.jpg"
-                            alt="Seattle clocktower in between sunset and blue hour"
-                            title="In Between Sunset and Blue Hour">
-                    </div>
-                    <div class="brick">
-                        <img src="https://live.staticflickr.com/65535/48888391711_055bbe737e_b.jpg" alt="Yellow lantern"
-                            title="Yellow">
-                    </div>
-                    <div class="brick">
-                        <img src="https://live.staticflickr.com/65535/50343353806_28e6fa628c_b.jpg"
-                            alt="House on Venice Canals reflection" title="House on Venice Canals">
-                    </div>
-                    <div class="brick">
-                        <img src="https://live.staticflickr.com/1953/30664853227_a2399d21d9_b.jpg"
-                            alt="Sunny blue skies with painted clouds and a slope of trees" title="Painted Clouds">
-                    </div>
-                    <div class="brick">
-                        <img src="https://live.staticflickr.com/1978/44691925945_fd13fcb504_b.jpg"
-                            alt="Person's back with lots of bokeh on the street at night"
-                            title="Low Light Street Bokeh">
-                    </div>
-
-                    <div class="brick">
-                        <img src="https://live.staticflickr.com/1951/45605887431_64a43bd161_b.jpg" alt="Autumn leaves"
-                            title="Autumn Leaves">
-                    </div>
-                    <div class="brick">
-                        <img src="https://live.staticflickr.com/1975/45605886531_ed529b5c87_b.jpg"
-                            alt="San Diego Safari landscape reflection" title="San Diego Safari Reflection">
-                    </div>
-                    <div class="brick">
-                        <img src="https://live.staticflickr.com/1925/43788177460_e4cae175b6_b.jpg" alt="Acorn"
-                            title="Acorn">
-                    </div>
-                    <div class="brick">
-                        <img src="https://live.staticflickr.com/1977/30664863717_c1431774da_b.jpg"
-                            alt="San Diego Safari landscape with trees" title="San Diego Safari">
-                    </div>
-                    <div class="brick">
-                        <img src="https://live.staticflickr.com/4874/46182980091_bde78be58d_b.jpg"
-                            alt="Birds over the ocean at sunset" title="Birds at Sunset">
-                    </div>
-                    <div class="brick">
-                        <img src="https://live.staticflickr.com/1941/30664852817_cfc3bc6a1f_b.jpg"
-                            alt="On the highway to Snoqualmie, blue skies and surrounded by trees"
-                            title="On the highway to Snoqualmie">
-                    </div>
-                    <div class="brick">
-                        <img src="https://live.staticflickr.com/1910/44881250424_83a0acfbf1_b.jpg"
-                            alt="Clown fish at the aquarium" title="Nemo">
-                    </div>
-                    <div class="brick">
-                        <img src="https://live.staticflickr.com/1931/44691938525_8556b4252b_b.jpg"
-                            alt="Fish at the aquarium" title="Fish">
-                    </div>
-                    <div class="brick">
-                        <img src="https://live.staticflickr.com/65535/47850007591_9cd35cc661_b.jpg"
-                            alt="Sting ray at the aquarium" title="Ray">
-                    </div>
-                    <div class="brick">
-                        <img src="https://live.staticflickr.com/65535/47850007841_e66fd34615_b.jpg" alt="Bird model"
-                            title="Bird Model">
-                    </div>
-                    <div class="brick">
-                        <img src="https://live.staticflickr.com/65535/49377551182_bd49989330_b.jpg"
-                            alt="On the streets of Pasadena, CA" title="On the streets of Pasadena">
-                    </div>
-                </div>
-                <p class="more-info">Check out my <a href="https://www.instagram.com/anniedotexe/">Instagram</a> and <a
-                        href="https://www.flickr.com/people/anniewuphotos/">Flickr</a> for more photography.</p>
-            </div>
-
-            <div class="section-title" id="contact">
-                <h2>> Contact Me</h2>
-                <p>Here are all the places you can find or contact me on the internet.</p>
-                <div class="social-links">
-                    <a
-                        href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#97;&#110;&#110;&#105;&#101;&#119;&#117;&#50;&#51;&#48;&#51;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">
-                        <img src="./img/gmail.svg" class="socials button" alt="Gmail">
+                <div class="cta-container">
+                    <a href="/projects" class="cta">
+                        Explore More
                     </a>
-                    <a href="https://www.linkedin.com/in/anniewu2303/" aria-label="LinkedIn">
-                        <img src="./img/linkedin.svg" class="socials button" alt="LinkedIn Profile">
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer-container">
+            <div class="footer">
+                <div class="footer-column">
+                    <a href="/" class="footer-logo">@anniedotexe</a>
+                    <div class="socials">
+                        <ul>
+                            <li class="social-link">
+                                <a href="https://github.com/anniedotexe" aria-label="GitHub"
+                                    target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </li>
+                            <li class="social-link">
+                                <a href="https://www.linkedin.com/in/anniewu2303/"
+                                    aria-label="LinkedIn" target="_blank">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                            <li class="social-link">
+                                <a href="https://twitter.com/anniedotexe" aria-label="Twitter"
+                                    target="_blank">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="social-link">
+                                <a href="https://www.instagram.com/anniedotexe/"
+                                    aria-label="Instagram" target="_blank">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <span class="copyright">&copy; 2021 | Annie Wu</span>
+                </div>
+                <div class="footer-column">
+                    <a href="/about" class="footer-button">
+                        <img src="./img/smile.svg" alt="Smile Icon">
+                        About
                     </a>
-                    <a href="https://github.com/anniedotexe/" aria-label="GitHub">
-                        <img src="./img/github.svg" class="socials button" alt="GitHub Profile">
+                    <a href="/projects" class="footer-button">
+                        <img src="./img/coding.svg" alt="Code Icon">
+                        Projects
                     </a>
-                    <a href="https://dev.to/anniedotexe" aria-label="dev.to">
-                        <img src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg" class="socials button"
-                            alt="DEV Community Profile">
+                    <a href="/photos" class="footer-button">
+                        <img src="./img/camera.svg" alt="Camera Icon">
+                        Photos
                     </a>
-                    <a href="https://twitter.com/anniedotexe/" aria-label="Twitter">
-                        <img src="./img/twitter.svg" class="socials button" alt="Twitter Profile">
+                </div>
+                <div class="footer-column">
+                    <a href="/blog" class="footer-button">
+                        <img src="./img/blog.svg" alt="Blog Icon">
+                        Blog
                     </a>
-                    <a href="https://www.instagram.com/anniedotexe/" aria-label="Instagram">
-                        <img src="./img/instagram.svg" class="socials button" alt="Instagram Profile">
+                    <a href="/anniewu-resume.pdf" class="footer-button">
+                        <img src="./img/resume.svg" alt="Resume Icon">
+                        Resume
                     </a>
-                    <a href="https://www.flickr.com/people/anniewuphotos/" aria-label="Flickr">
-                        <img src="./img/flickr.svg" class="socials button" alt="Flickr Profile">
+                    <a href="mailto:anniewu2303@gmail.com" class="footer-button">
+                        <img src="./img/email.svg" alt="Email Icon">
+                        Contact
                     </a>
-                    <a href="https://twitch.tv/anniedotexe/" aria-label="Twitch">
-                        <img src="./img/twitch.svg" class="socials button" alt="Twitch Profile">
+                </div>
+                <div class="footer-column">
+                    <a href="/music" class="footer-button">
+                        <img src="./img/spotify.svg" alt="Spotify Icon">
+                        Music
+                    </a>
+                    <a href="/uses" class="footer-button">
+                        <img src="./img/uses.svg" alt="Lightning Icon">
+                        Uses
+                    </a>
+                    <a href="https://www.polywork.com/anniedotexe" class="footer-button">
+                        <img src="./img/polywork.svg" alt="PolyWork Icon">
+                        Updates
                     </a>
                 </div>
             </div>
+        </footer>
 
-            <footer class="copyright">
-                <span>Copyright &copy; 2021 | Annie Wu</span>
-            </footer>
-        </div>
-    </div>
-
-    <script src="./js/main.js"></script>
-</body>
+        <script src="./js/main.js"></script>
+    </body>
 
 </html>
