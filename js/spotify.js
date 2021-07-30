@@ -18,7 +18,7 @@ const authEndpoint = 'https://accounts.spotify.com/authorize';
 
 // Replace with your app's client ID, redirect URI and desired scopes
 const clientId = process.env.SPOTIFY_CLIENT_ID;
-const redirectUri = 'https://anniew.xyz/music';
+const redirectUri = 'https://annie-test.netlify.app/music';
 const scopes = [
     'user-read-currently-playing',
     'user-top-read'
