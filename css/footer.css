@@ -15,8 +15,7 @@
 .footer-column {
     display: flex;
     flex-direction: column;
-    text-align: left;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .footer-logo {
@@ -80,5 +79,9 @@
         align-items: center;
         justify-content: space-between;
         max-width: 1600px;
+    }
+    .footer-column {
+        text-align: left;
+        align-items: flex-start;
     }
 }

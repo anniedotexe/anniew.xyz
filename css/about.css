@@ -67,8 +67,8 @@ h4, h5 {
 }
 
 .bottom span {
-    content: " \A0";
-    border-left: 12px solid;
+    content: "\A0";
+    border-right: 12px solid;
     animation: blink 1s steps(1) infinite;
 }
 

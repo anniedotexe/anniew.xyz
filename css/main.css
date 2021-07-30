@@ -14,13 +14,13 @@ body {
 }
 
 h1, h2, h3 {
-    font-family: 'Fira Code', monospace;
+    font-family: 'Fira Mono', monospace;
 }
 
 h2 {
     margin: 0 auto;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.75em;
     font-weight: 700;
 }
 
