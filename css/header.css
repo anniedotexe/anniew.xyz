@@ -82,19 +82,21 @@ header {
         flex-direction: row;
         background-color: #1D263B;
         height: fit-content;
+        height: -moz-fit-content;
     }
     .nav-item {
         position: relative;
         display: block;
         width: fit-content;
+        width: -moz-fit-content;
         margin: 0;
     }
     .nav-item a {
         width: fit-content;
+        width: -moz-fit-content;
         color: #FFFFFF;
     }
     .toggle {
         display: none;
     }
-    
 }
