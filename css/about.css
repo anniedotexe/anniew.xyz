@@ -9,19 +9,38 @@ h4, h5 {
 
 /* --- PROFILE --- */
 
-.terminal {
-    margin-top: 50px;
+.profile-container {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.me-icon-container {
+    width: 200px;
+    height: auto;
+    object-fit: contain;
+    text-align: center;
+}
+
+.me-icon {
+    height: 100%;
+    width: 100%;
+}
+
+.terminal-container {
+    max-width: 700px;
+    width: 100%;
+    margin-top: 25px;
 }
 
 .terminal-header {
-    margin: 0 auto;
     padding: 5px 20px;
     display: flex;
     text-align: center;
     justify-content: space-between;
     border-radius: 10px 10px 0 0;
     background-color: #7EB77F;
-    max-width: 800px;
 }
 
 #terminal-title {
@@ -39,11 +58,9 @@ h4, h5 {
 }
 
 .terminal-window {
-    margin: 0 auto;
     padding: 20px;
     border-radius: 0 0 10px 10px;
     text-align: left;
-    max-width: 800px;
     border: 1px solid #7EB77F;
 }
 
@@ -186,6 +203,21 @@ h4, h5 {
 }
 
 @media only screen and (min-width: 1100px) {
+    .profile-container {
+        margin: 50px auto 0 auto;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+    }
+    .terminal-container {
+        flex-grow: 1;
+        margin: 0;
+    }
+    .me-icon-container {
+        width: 300px;
+        height: auto;
+    }
     .education-experience-card {
         display: flex;
         justify-content: space-between;
