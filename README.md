@@ -20,6 +20,7 @@ This is the source code for my personal website - a developer and photographer p
 - [Design](#design)
   - [Fonts](#fonts)
   - [Color Scheme](#color-scheme)
+  - [Icon](#icon)
 - [Wireframes](#wireframes)
 - [Built With](#built-with)
 - [Creator / Maintainer](#creator-maintainer)
@@ -47,6 +48,15 @@ This is the source code for my personal website - a developer and photographer p
 - Slate Gray - mobile navbar background color
 
 <a href="https://coolors.co/ffffff-1d263b-f08cae-399e5a-0fa3b1-6b818c"><img alt="Color Palette Screenshot" src="./img/readme/palette.png"></a>
+
+### Icon
+
+This is the icon of me in [anniew.xyz/about](https://anniew.xyz/about)
+
+_Art credits to my friend [Steph](https://twitter.com/naruwho)._
+
+<img alt="Me Icon" src="./img/me-icon.png" width="250px">
+<img alt="Me Icon Smiling" src="./img/me-icon-smiling.png" width="250px">
 
 ---
 
