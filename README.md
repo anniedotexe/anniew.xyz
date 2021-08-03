@@ -57,6 +57,7 @@ _Art credits to my friend [Steph](https://twitter.com/naruwho)._
 
 <img alt="Me Icon" src="./img/me-icon.png" width="250px">
 <img alt="Me Icon Smiling" src="./img/me-icon-smiling.png" width="250px">
+<img alt="Me Icon Gif" src="./img/me-icon.gif" width="250px">
 
 ---
 
