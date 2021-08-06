@@ -53,7 +53,7 @@ This is the source code for my personal website - a developer and photographer p
 
 This is the icon of me in [anniew.xyz/about](https://anniew.xyz/about)
 
-_Art credits to my friend [Steph](https://twitter.com/naruwho)._
+_Art credits to my friend [Steph](https://www.instagram.com/wynn_stickers/)._
 
 <img alt="Me Icon" src="./img/me-icon.png" width="250px">
 <img alt="Me Icon Smiling" src="./img/me-icon-smiling.png" width="250px">
