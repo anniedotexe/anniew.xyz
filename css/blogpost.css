@@ -67,6 +67,7 @@ section ul li::before {
 
 section a {
     cursor: pointer;
+    text-decoration: underline;
 }
 
 section ul li a:hover {
@@ -78,11 +79,11 @@ section ul li a:hover {
     margin-left: 40px;
 }
 
-.underlined-link {
+.underlined {
     text-decoration: underline;
 }
 
-.underlined-link:hover {
+.underlined:hover {
     color: #F08CAE;
 }
 
