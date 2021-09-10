@@ -23,6 +23,7 @@
 .landing-page-socials ul {
     display: flex;
     flex-direction: row;
+    margin-bottom: 20px;
 }
 
 .landing-page-socials ul li a i {
@@ -33,20 +34,37 @@
 
 .small-title {
     text-align: left;
-    font-size: 1.2em;
-    margin-bottom: 0.5em;
-}
-
-.my-name {
+    font-size: 1.5em;
     font-weight: 700;
-    letter-spacing: 0.1em;
-    font-family: 'Fira Code', monospace;
+    margin-bottom: 0.5em;
 }
 
 .big-title {
     margin: 0;
     text-align: left;
-    font-size: 2.25em;
+    font-weight: 700;
+    font-size: 2.75em;
+    letter-spacing: 0;
+}
+
+.my-name {
+    letter-spacing: 0.1em;
+    font-family: 'Fira Code', monospace;
+}
+
+h3 {
+    margin: 5px 0 0 0;
+    text-align: left;
+}
+
+h3 em {
+    color: white;
+    letter-spacing: 0.05em;
+}
+
+h3 a:hover {
+    color: #7EB77F;
+    text-decoration: underline;
 }
 
 .short-bio {
@@ -57,19 +75,14 @@
 }
 
 .short-bio p {
-    margin-top: -0.75em;
+    margin-top: 25px;
     font-size: 1.2em;
     line-height: 1.5em;
-    text-indent: 3.5em;
     letter-spacing: 0.025em;
 }
 
 .cta-container {
     margin: 0 auto;
-}
-
-.email-container {
-    margin: 0;
 }
 
 .cta {
@@ -112,12 +125,24 @@
     padding: 10px 20px;
 }
 
+.art-me {
+    display: none;
+    height: 350px;
+}
+
+.art-me img {
+    height: 100%;
+}
+
 @media only screen and (min-width: 768px) {
     .big-title {
-        font-size: 3.25em;
+        font-size: 3.5em;
     }
     .short-bio {
-        max-width: 75%;
+        max-width: 90%;
+    }
+    .art-me {
+        display: block;
     }
     #home {
         flex-direction: row;
@@ -127,5 +152,14 @@
     }
     .landing-page-socials ul li a i {
         margin: 5px 0;
+    }
+    .email-container {
+        margin: 0;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    #home {
+        gap: 10%;
     }
 }
