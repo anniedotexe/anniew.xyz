@@ -7,12 +7,17 @@
 .footer {
     margin: 0 auto;
     padding: 0 25px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    row-gap: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
 }
 
 .footer-column {
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -75,9 +80,7 @@
     .footer {
         margin: 0 auto;
         padding: 0 25px;
-        display: flex;
-        text-align: center;
-        align-items: center;
+        flex-direction: row;
         justify-content: space-between;
         max-width: 1600px;
     }
