@@ -23,8 +23,7 @@ This is the source code for my personal website - a developer and photographer p
   - [Icon](#icon)
 - [Wireframes](#wireframes)
 - [Built With](#built-with)
-- [Creator / Maintainer](#creator-maintainer)
-- [Acknowledgments](#acknowledgments)
+- [Creator / Maintainer](#creator-/-maintainer)
 
 ---
 
@@ -33,9 +32,12 @@ This is the source code for my personal website - a developer and photographer p
 ### Fonts
 
 [Fire Code](https://fonts.google.com/specimen/Fira+Code) - headings and code text
+
 <img alt="Font Example Screenshot" src="./img/readme/fire-code.png">
 
+
 [Nunito](https://fonts.google.com/specimen/Nunito) - normal text
+
 <img alt="Font Example Screenshot" src="./img/readme/nunito.png">
 
 ### Color Scheme
@@ -85,7 +87,7 @@ I made a mix of low and high fidelity wireframes for the pages of my website. Th
 
 ---
 
-### Creator / Maintainer
+## Creator / Maintainer
 
 Annie Wu ([anniedotexe](https://github.com/anniedotexe))
 
