@@ -23,7 +23,7 @@ This is the source code for my personal website - a developer and photographer p
   - [Icon](#icon)
 - [Wireframes](#wireframes)
 - [Built With](#built-with)
-- [Creator / Maintainer](#creator-maintainer)
+- [Creator / Maintainer](#creator--maintainer)
 
 ---
 
