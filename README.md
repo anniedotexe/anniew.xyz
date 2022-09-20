@@ -100,7 +100,7 @@ If you have any questions, comments, or concerns, feel free to contact me below.
 </p>
 
 This project was created for educational purposes and for personal use. Feel free to take inspiration.
-- If you are interested in forking this to use as a template for your own portfolio website, please ensure to update all information and content to be yours before deploying, so you are not displaying my content and information as your own. Thanks. :D
+- If you are interested in forking this to use as a template for your own portfolio website, please give credit (i.e., in the readme) and ensure to update all information and content to be yours before deploying, so you are not displaying my content and information as your own. Thanks. :D
 
 If you like my content or find this code useful, give it a ⭐ or support me by buying me a coffee ☕💙
 
