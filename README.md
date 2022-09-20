@@ -1,4 +1,4 @@
-# [anniew.xyz](https://anniew.xyz/) - v2.0
+# [anniew.xyz](https://anniew.xyz/) - v2.5
 
 This is the source code for my personal website - a developer and photographer portfolio.
 
@@ -12,7 +12,7 @@ This is the source code for my personal website - a developer and photographer p
 </p>
 
 <p align="center">
-  <a href="http://anniew.xyz"><img src="./img/readme/screenshot.png" width="700px" alt="landing page"></a>
+  <a href="http://anniew.xyz"><img src="./img/project-preview/anniewxyz-preview.png" width="700px" alt="landing page"></a>
 </p>
 
 ## Table of Contents
@@ -53,7 +53,7 @@ This is the source code for my personal website - a developer and photographer p
 
 ### Icon
 
-This is the icon of me in [anniew.xyz/about](https://anniew.xyz/about)
+This is the icon of me on the Home and About pages.
 
 _Art credits to my friend [Steph](https://www.instagram.com/wynn.draws/)._
 
@@ -65,7 +65,7 @@ _Art credits to my friend [Steph](https://www.instagram.com/wynn.draws/)._
 
 ## Wireframes
 
-I made a mix of low and high fidelity wireframes for the pages of my website. The final product looks mostly like this, but I did make some small changes.
+I made a mix of low and high fidelity wireframes for the pages of my website. The final product looks mostly like this, but small changes are made along the way.
 
 <img alt="Wireframe" src="./img/readme/wireframe-home-desktop.png" >
 <img alt="Wireframe" src="./img/readme/wireframe-home-mobile.png" >
@@ -100,6 +100,7 @@ If you have any questions, comments, or concerns, feel free to contact me below.
 </p>
 
 This project was created for educational purposes and for personal use. Feel free to take inspiration.
+- If you are interested in forking this to use as a template for your own portfolio website, please ensure to update all information and content to be yours before deploying, so you are not displaying my content and information as your own. Thanks. :D
 
 If you like my content or find this code useful, give it a ⭐ or support me by buying me a coffee ☕💙
 
