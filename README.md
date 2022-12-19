@@ -6,8 +6,7 @@ This is the source code for my personal website - a developer and photographer p
     <img alt="HTML5" src="https://img.shields.io/badge/-HTML5-E44D26?style=flat&logo=html5&logoColor=white"/>
     <img alt="CSS3" src="https://img.shields.io/badge/-CSS3-2965f1?style=flat&logo=css3&logoColor=white"/>
     <img alt="JavaScript" src="https://img.shields.io/badge/-JavaScript-F0DB4F?style=flat&logo=javascript&logoColor=white"/>
-    <img alt="Open Source? Yes!" src="https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github"/>
-    <img alt="Netlify Status" src="https://api.netlify.com/api/v1/badges/a97a8c74-04cc-4b59-b7b9-71d2800ca95f/deploy-status"/>
+    <img alt="Netlify Deploy Status" src="https://api.netlify.com/api/v1/badges/a97a8c74-04cc-4b59-b7b9-71d2800ca95f/deploy-status"/>
 
 </p>
 
@@ -55,7 +54,7 @@ This is the source code for my personal website - a developer and photographer p
 
 This is the icon of me on the Home and About pages.
 
-_Art credits to my friend [Steph](https://www.instagram.com/wynn.draws/)._
+_Art credits to my friend [wynn.draws](https://www.instagram.com/wynn.draws/)._
 
 <img alt="Me Icon" src="./img/me-icon.png" width="250px">
 <img alt="Me Icon Smiling" src="./img/me-icon-smiling.png" width="250px">
