@@ -109,4 +109,4 @@ If you like my content or find this code useful, give it a ⭐ or support me by 
 
 ### License
 
-Copyright &copy; 2021-2022 Annie Wu. All rights reserved.
+Copyright &copy; 2021-2023 Annie Wu. All rights reserved.
