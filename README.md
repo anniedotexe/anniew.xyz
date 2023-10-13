@@ -1,6 +1,6 @@
 # [anniew.xyz](https://anniew.xyz/) - v2.5
 
-This is the source code for my personal website - a developer and photographer portfolio.
+This is the source code for my personal portfolio website.
 
 <p align="center">
     <img alt="HTML5" src="https://img.shields.io/badge/-HTML5-E44D26?style=flat&logo=html5&logoColor=white"/>
@@ -20,9 +20,8 @@ This is the source code for my personal website - a developer and photographer p
   - [Fonts](#fonts)
   - [Color Scheme](#color-scheme)
   - [Icon](#icon)
-- [Wireframes](#wireframes)
 - [Built With](#built-with)
-- [Creator / Maintainer](#creator--maintainer)
+- [Creator](#creator)
 
 ---
 
@@ -61,19 +60,6 @@ _Art credits to my friend [wynn.draws](https://www.instagram.com/wynn.draws/)._
 <img alt="Me Icon Gif" src="./img/me-icon.gif" width="250px">
 
 ---
-
-## Wireframes
-
-I made a mix of low and high fidelity wireframes for the pages of my website. The final product looks mostly like this, but small changes are made along the way.
-
-<img alt="Wireframe" src="./img/readme/wireframe-home-desktop.png" >
-<img alt="Wireframe" src="./img/readme/wireframe-home-mobile.png" >
-<img alt="Wireframe" src="./img/readme/wireframe-about-desktop.png" >
-<img alt="Wireframe" src="./img/readme/wireframe-photos-desktop.png" >
-<img alt="Wireframe" src="./img/readme/wireframe-photos-mobile.png" >
-
----
-
 ## Built With
 
 - 💙 [HTML5](https://www.w3schools.com/html/)
@@ -86,7 +72,7 @@ I made a mix of low and high fidelity wireframes for the pages of my website. Th
 
 ---
 
-## Creator / Maintainer
+## Creator
 
 Annie Wu ([anniedotexe](https://github.com/anniedotexe))
 
@@ -98,8 +84,8 @@ If you have any questions, comments, or concerns, feel free to contact me below.
   </a>
 </p>
 
-This project was created for educational purposes and for personal use. Feel free to take inspiration.
-- If you are interested in forking this to use as a template for your own portfolio website, please give credit (i.e., in the readme) and ensure to update all information and content to be yours before deploying, so you are not displaying my content and information as your own. Thanks. :D
+This project was created for educational purposes and for personal use. 
+- If you are interested in forking this to use as a template for your own portfolio website, please give credit (i.e., in the README) and ensure to update all information and content to be yours before deploying, so you are not displaying my content and information as your own. Thanks.
 
 If you like my content or find this code useful, give it a ⭐ or support me by buying me a coffee ☕💙
 
@@ -107,6 +93,6 @@ If you like my content or find this code useful, give it a ⭐ or support me by 
 
 ---
 
-### License
+## License
 
 Copyright &copy; 2021-2023 Annie Wu. All rights reserved.
