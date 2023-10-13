@@ -193,7 +193,7 @@ h4, h5 {
 }
 
 @media only screen and (min-width: 768px) {
-    .profile-container {
+    /* .profile-container {
         margin: 50px auto 0 auto;
         flex-direction: row;
         justify-content: center;
@@ -209,7 +209,7 @@ h4, h5 {
     .me-icon-container {
         width: 300px;
         height: auto;
-    }
+    } */
 
     .education-experience-card {
         display: flex;
