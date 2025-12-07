@@ -71,28 +71,14 @@ _Art credits to my friend [wynn.draws](https://www.instagram.com/wynn.draws/)._
 - 💙 [Figma](https://www.figma.com/) for design and prototyping tools
 
 ---
-
 ## Creator
 
 Annie Wu ([anniedotexe](https://github.com/anniedotexe))
 
-If you have any questions, comments, or concerns, feel free to contact me below.
+Copyright &copy; 2021-2026 Annie Wu. All rights reserved.
 
-<p align="left">
-  <a href="mailto:anniewu2303@gmail.com"> 
-    <img alt="Connect via Email" src="https://img.shields.io/badge/Gmail-c14438?style=flat&logo=Gmail&logoColor=white" />
-  </a>
-</p>
-
-This project was created for educational purposes and for personal use. 
-- If you are interested in forking this to use as a template for your own portfolio website, please give credit (i.e., in the README) and ensure to update all information and content to be yours before deploying, so you are not displaying my content and information as your own. Thanks.
+Unauthorized copying, reproduction, redistribution, or posting of this content or source code on any website, platform, or medium is strictly prohibited without explicit written permission from the author. Any use, modification, or distribution of this material without permission may violate copyright law.
 
 If you like my content or find this code useful, give it a ⭐ or support me by buying me a coffee ☕💙
 
 <a href="https://www.buymeacoffee.com/anniedotexe" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
-
----
-
-## License
-
-Copyright &copy; 2021-2025 Annie Wu. All rights reserved.
