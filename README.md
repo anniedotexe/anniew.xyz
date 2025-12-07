@@ -49,16 +49,6 @@ This is the source code for my personal portfolio website.
 
 <a href="https://coolors.co/ffffff-1d263b-f08cae-399e5a-0fa3b1-6b818c"><img alt="Color Palette Screenshot" src="./img/readme/palette.png"></a>
 
-### Icon
-
-This is the icon of me on the Home and About pages.
-
-_Art credits to my friend [wynn.draws](https://www.instagram.com/wynn.draws/)._
-
-<img alt="Me Icon" src="./img/me-icon.png" width="250px">
-<img alt="Me Icon Smiling" src="./img/me-icon-smiling.png" width="250px">
-<img alt="Me Icon Gif" src="./img/me-icon.gif" width="250px">
-
 ---
 ## Built With
 
